@@ -1,5 +1,4 @@
-// alert("Hello");
-const jobTitles = ["Web Developer", "UI/UX Designer", "Software Engineer"];
+const jobTitles = ["Web Developer", "IT Trainer"];
 let currentIndex = 0;
 
 function updateJobText() {
@@ -13,4 +12,4 @@ function updateJobText() {
 }
 
 updateJobText();
-setInterval(updateJobText, 5000);
+setInterval(updateJobText, 3000);

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hein Htet Aung</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -13,9 +16,7 @@
                 <div class="logo">
                     <a href="#" class="logo">HEIN</a>
                 </div>
-                <div class="hamburger"></div>
-                <input type="checkbox" class="toggle-menu">
-                <ul class="menu">
+                <ul class="pc-menu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#blog">Blog</a></li>
@@ -24,16 +25,35 @@
                 <div class="let-talk">
                     <a href="#contact" class="btn-let-talk">Let's Talk</a>
                 </div>
-            </nav>
+                </nav>
+                <!-- Mobile Menu -->
+                <div class="menu-wrap">
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger">
+                        <div></div>
+                    </div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Projects</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </header>
     <main>
         <div class="container">
             <div class="left flex-item">
-            <p class="greeting">I'm</p>
-            <h1 id="name">Hein Htet Aung</h1>
-            <h2 id="career"></h2>
-            <a href="assets/HeinHtet-Resume.pdf" class="btn-download">Download CV</a>
+                <p class="greeting">I'm</p>
+                <h1 id="name">Hein Htet Aung</h1>
+                <h2 id="career"></h2>
+                <a href="assets/HeinHtet-Resume.pdf" class="btn-download">Download CV</a>
             </div>
             <div class="right flex-item">
                 <img src="./image/programmer.svg" alt="profile" srcset="">
@@ -42,4 +62,5 @@
     </main>
     <script src="js/index.js"></script>
 </body>
+
 </html>

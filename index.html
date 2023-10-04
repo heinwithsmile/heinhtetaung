@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hein Htet Aung</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
+    <!-- Header Section Start -->
     <header>
         <div class="container">
             <nav>
@@ -36,10 +40,10 @@
                         <div>
                             <div>
                                 <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Projects</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#blog">Blog</a></li>
+                                    <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -47,19 +51,52 @@
                 </div>
         </div>
     </header>
-    <main>
+    <!-- Header Section End -->
+    <!-- Banner Section Start -->
+    <section id="banner" class="banner">
         <div class="container">
             <div class="left flex-item">
                 <p class="greeting">I'm</p>
                 <h1 id="name">Hein Htet Aung</h1>
                 <h2 id="career"></h2>
-                <a href="assets/HeinHtet-Resume.pdf" class="btn-download">Download CV</a>
+                <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, consectetur! In quas minima placeat id?</p>
+                <a href="#contact" class="btn-contact">Contact Me</a>
+                <div class="social">
+                    <div>
+                        Let's Connect! 
+                        <span class="line"></span>
+                        <span class="icon"><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
+                        <span class="icon"><a href="#"><i class="fa-brands fa-square-facebook"></i></i></a></span>
+                        <span class="icon"><a href="#"><i class="fa-brands fa-square-youtube"></i></a></span>
+                    </div>
+                </div>
             </div>
             <div class="right flex-item">
-                <img src="./image/programmer.svg" alt="profile" srcset="">
+                <img src="./image/programmer.svg" alt="profile">
             </div>
         </div>
-    </main>
+    </section>
+    <!-- Banner Section End -->
+    <!-- About Section Start -->
+    <section id="about" class="about container">
+        This is about section.
+    </section>
+    <!-- About Section End -->
+    <!-- Project Section Start -->
+    <section id="projects" class="projects container">
+        This is project section.
+    </section>
+    <!-- Project Section End -->
+    <!-- Blog Section Start -->
+    <section id="blog" class="blog container">
+        This is blog section.
+    </section>
+    <!-- Blog Section End -->
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact container">
+        This is contact section.
+    </section>
+    <!-- Contact Section End -->
     <script src="js/index.js"></script>
 </body>
 

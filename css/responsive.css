@@ -1,0 +1,33 @@
+@media (max-width: 480px) {
+    .left h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin-right: 40px;
+    }
+
+    .btn-let-talk {
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .let-talk {
+        display: none;
+    }
+}

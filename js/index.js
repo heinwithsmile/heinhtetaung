@@ -1,4 +1,4 @@
-const jobTitles = ["Web Developer", "IT Trainer"];
+const jobTitles = ["Web Developer", "IT Trainer", "Freelancer"];
 let currentIndex = 0;
 
 function updateJobText() {

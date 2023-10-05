@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/progress-bar.css">
 </head>
 
 <body>
@@ -29,26 +30,26 @@
                 <div class="let-talk">
                     <a href="#contact" class="btn-let-talk">Let's Talk</a>
                 </div>
-                </nav>
-                <!-- Mobile Menu -->
-                <div class="menu-wrap">
-                    <input type="checkbox" class="toggler">
-                    <div class="hamburger">
-                        <div></div>
-                    </div>
-                    <div class="menu">
+            </nav>
+            <!-- Mobile Menu -->
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
                         <div>
-                            <div>
-                                <ul>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#projects">Projects</a></li>
-                                    <li><a href="#blog">Blog</a></li>
-                                    <li><a href="#contact">Contact</a></li>
-                                </ul>
-                            </div>
+                            <ul>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </header>
     <!-- Header Section End -->
@@ -59,11 +60,12 @@
                 <p class="greeting">I'm</p>
                 <h1 id="name">Hein Htet Aung</h1>
                 <h2 id="career"></h2>
-                <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, consectetur! In quas minima placeat id?</p>
+                <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
+                    consectetur! In quas minima placeat id?</p>
                 <a href="#contact" class="btn-contact">Contact Me</a>
                 <div class="social">
                     <div>
-                        Let's Connect! 
+                        Let's Connect!
                         <span class="line"></span>
                         <span class="icon"><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
                         <span class="icon"><a href="#"><i class="fa-brands fa-square-facebook"></i></i></a></span>
@@ -85,7 +87,8 @@
                 <img src="./image/profile.svg" width="200px" height="200px">
             </div> -->
             <div class="profile-content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, perspiciatis? Voluptas, praesentium?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, perspiciatis? Voluptas,
+                    praesentium?</p>
             </div>
         </div>
         <div class="edu-ex">
@@ -106,7 +109,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eligendi!</p>
                     </div>
                 </div>
-                <div class="work-experience-section">
+                <div class="work-experience-section flex-item">
                     <div class="sub-icon">
                         <span class="edu-work-icon">
                             <i class="fa-solid fa-briefcase" style="color: #178573; font-size: 32px;"></i>
@@ -123,9 +126,61 @@
                 </div>
             </div>
         </div>
-        <div class="skills">
+        <!-- Programming Skills Section Start -->
+        <div class="programming">
             <h3 style="text-align: center;"><span>Programming Skills</span></h3>
+            <div class="skills">
+                <div class="skill-left flex-item">
+                    <div class="skill-main">
+                        <div class="skill-wrrap">
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="90"></div>
+                            </div>
+                        </div>
+        
+                        <div class="skill-wrrap">
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="70"></div>
+                            </div>
+                        </div>
+        
+                        <div class="skill-wrrap flex-item">
+                            <div class="skill-name">Javascript</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-right flex-item">
+                    <div class="skill-main">
+                        <div class="skill-wrrap">
+                            <div class="skill-name">PHP</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="90"></div>
+                            </div>
+                        </div>
+        
+                        <div class="skill-wrrap">
+                            <div class="skill-name">Laravel</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="70"></div>
+                            </div>
+                        </div>
+        
+                        <div class="skill-wrrap">
+                            <div class="skill-name">React</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- Programming Skills End -->
     </section>
     <!-- About Section End -->
     <!-- Project Section Start -->
@@ -149,6 +204,7 @@
     </footer>
     <!-- Footer Section End -->
     <script src="js/index.js"></script>
+    <script src="./js/progress-bar.js"></script>
 </body>
 
 </html>

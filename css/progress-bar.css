@@ -1,0 +1,53 @@
+.skill-main {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.skill-main .skill-wrrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.skill-main .skill-wrrap .skill-name {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+.skill-main .skill-wrrap .skill-bar {
+  height: 16px;
+  background-color: #ccc;
+  border-radius: 8px;
+}
+.skill-main .skill-wrrap .skill-per {
+  height: 16px;
+  background: #178573;
+  border-radius: 8px;
+  width: 0;
+  transition: 1s linear;
+  position: relative;
+}
+.skill-main .skill-wrrap .skill-per:before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background-color: #23576f;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 4px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+.skill-main .skill-wrrap .skill-per:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #23576f;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}/*# sourceMappingURL=progress-bar.css.map */

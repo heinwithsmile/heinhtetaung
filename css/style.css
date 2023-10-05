@@ -39,12 +39,6 @@ header nav ul li a:hover{
     font-weight: bold;
 }
 
-.flex-item {
-    flex: 1;
-    /* margin: 20px 30px; */
-    align-self: center;
-}
-
 .left .greeting, .left #career {
     color: var(--black);
     padding: 10px;
@@ -77,11 +71,10 @@ header nav ul li a:hover{
     font-weight: bold;
 }
 
-.right {
+/* .right {
     width: 100vw;
-    height: 100vh;
-    margin-top: 200px;
-}
+    height: 50vh;
+} */
 
 .social {
     margin-top: 200px;
@@ -139,26 +132,59 @@ header nav ul li a:hover{
     color: var(--dark-green);
 }
 
-#about .profile {
+.edu-ex {
+    margin-top: 50px;
+}
+
+.edu-ex .work {
     display: flex;
-    justify-content: center;
-    padding: 50px;
+    margin-top: 50px;
 }
 
-#about .profile div {
-    width: 400px;
-}
-
-.edu-ex .work{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.work div {
+.edu-ex .work .eduation-section, .work-experience-section {
+    padding: 20px;
     width: 500px;
-    height: 500px;
-    position: relative;
-    top: 50px;
 }
+
+.work .eduation-section, .work .work-experience-section {
+    display: flex;
+    gap: 20px;
+}
+
+.edu-work-icon::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 200px;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    background-color: var(--black);
+}
+
+.duration {
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.description p:nth-child(3) {
+    /* font-weight: bold; */
+    margin-top: 10px;
+}
+
+.description p:last-child {
+    margin-top: 10px;
+}
+
+
+
+
+
 

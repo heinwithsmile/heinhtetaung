@@ -9,6 +9,7 @@
     --primary-color: rgba(13, 110, 139, 0.75);
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;
+    --bg-color: #FFFFFF;
 }
 
 *{
@@ -22,6 +23,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
+    background-color: var(--bg-color);
 }
 
 img {
@@ -57,6 +59,7 @@ section {
 .icon {
     font-size: 32px;
     color: var(--dark-green);
+    /* color: var(--white); */
 }
 
 .flex-column {
@@ -71,3 +74,17 @@ section {
 .inline {
     display: inline;
 }
+
+.white {
+    color: var(--white);
+}
+
+/* FOR DARK MODE */
+[data-theme="dark"] {
+    --primary-color: #FCFDFD;
+    --secondary-color: #818386;
+    --bg-color: #010712;
+    --button-color: #818386;
+    --h1-color: #FCFDFD;
+}
+  

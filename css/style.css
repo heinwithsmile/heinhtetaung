@@ -39,6 +39,11 @@ header nav ul li a:hover{
     font-weight: bold;
 }
 
+/* BANNER SECTION */
+#banner .left, .right {
+    margin-top: 100px;
+}
+
 .left .greeting, .left #career {
     color: var(--black);
     padding: 10px;
@@ -70,11 +75,6 @@ header nav ul li a:hover{
     color: #178573;
     font-weight: bold;
 }
-
-/* .right {
-    width: 100vw;
-    height: 50vh;
-} */
 
 .social {
     margin-top: 200px;
@@ -257,7 +257,90 @@ form label {
     font-weight: bold;
 }
 
+/* FOOTER SECTION */
 
+.btn-top {
+    padding: 10px 20px;
+    background-color: var(--dark-green);
+    color: var(--white) !important;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* Toggle Switch */
+  
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 160px;
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+  }
+  
+  .description {
+      margin-left: 1.25rem;
+    }
+  
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 0.25rem;
+    content: "";
+    width: 26px;
+    height: 26px;
+    left: 0.25rem;
+    position: absolute;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--button-color);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  #error, #success-msg {
+    width: 40vw;
+    margin: 0.125rem 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-family: 'Jost';
+    color: var(--secondary-color);
+    }
 
 
 

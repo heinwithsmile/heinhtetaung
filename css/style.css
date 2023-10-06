@@ -187,31 +187,27 @@ header nav ul li a:hover{
 #contact {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.heading {
-    flex: 0 0 100%;
+.social-links span {
+    padding-right: 10px;
 }
 
 .contact-form {
     background-color: var(--white);
-    padding: 100px;
+    /* padding: 100px; */
     color: var(--black);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    padding: 50px;
-    border-radius: 20px;
-    height: 500px;
+    height: 600px;
 }
 
 .contact-form .form {
-    width: 400px;
-    height: 400px;
-    margin: auto;
+    width: 500px;
+    height: 550px;
+    margin: 10px;
+    padding: 50px;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3), 2px 1px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
 }
 
 form input[type="text"], form input[type="email"]{
@@ -239,6 +235,11 @@ form textarea {
 form textarea:focus {
     outline: none;
     border-color: var(--dark-green);
+}
+
+form label {
+    font-weight: 500;
+    letter-spacing: 0.15em;
 }
 
 .btn-send {

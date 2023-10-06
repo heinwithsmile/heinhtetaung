@@ -196,30 +196,77 @@
     <!-- Contact Section Start -->
     <section id="contact" class="contact container">
         <div class="contact-info flex-item">
-            <p class="heading">contact info</p>
-            <div class="icon">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="detail" style="padding: 10px;">
-                <p>heinhtetaung7715@gmail.com</p>
-            </div>
+            <!-- <p class="heading" style="letter-spacing: 0.2rem; margin-bottom: 20px; font-weight: 700;font-size: 1.2rem;">Contact Info</p> -->
+            <table>
+                <tr>
+                    <td>
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="detail" style="padding: 10px;">
+                            <p>heinhtetaung7715@gmail.com</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="detail" style="padding: 10px;">
+                            <p>+95 9767645621</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="icon">
+                            <i class="fa-solid fa-map-location"></i>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="detail" style="padding: 10px;">
+                            <a href="https://maps.app.goo.gl/aE9iv78j8gyNM8fw8">313, 8th floor, Ahyoegone, Corner of
+                                Banyardala Rd:, & 145th St, Yangon 11181</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="social-links">
+                            <span class="icon"><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
+                            <span class="icon"><a href="#"><i class="fa-brands fa-square-facebook"></i></i></a></span>
+                            <span class="icon"><a href="#"><i class="fa-brands fa-square-youtube"></i></a></span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
         <div class="contact-form flex-item">
             <div class="form">
+                <h2 style="text-align: center; text-transform: uppercase; letter-spacing: 0.2rem;">Get In Touch</h2>
                 <form action="#" class="">
                     <div class="name">
-                        <label for="name" class="block">NAME</label>
-                        <input type="text" name="name" id="name" class="block">
+                        <!-- <label for="name" class="block">NAME</label> -->
+                        <input type="text" name="name" id="name" class="block" placeholder="Full Name" required>
                     </div>
                     <div class="email">
-                        <label for="email" class="block">EMAIL</label>
-                        <input type="email" name="email" id="email" class="block">
+                        <!-- <label for="email" class="block ">EMAIL</label> -->
+                        <input type="email" name="email" id="email" class="block" placeholder="Email" required>
+                    </div>
+                    <div class="subject">
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
                     </div>
                     <div class="message">
-                        <label for="message" class="block">MESSAGE</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <!-- <label for="message" class="block">MESSAGE</label> -->
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
                     </div>
-                    <a href="#" class="btn-send">SEND</a>
+                    <a href="#" class="btn-send"><span style="margin-right: 5px;"><i
+                                class="fa-solid fa-paper-plane"></i></span>SEND</a>
                 </form>
             </div>
         </div>

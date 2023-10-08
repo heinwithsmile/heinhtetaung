@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hein Htet Aung</title>
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./css/progress-bar.css">
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body>
     <!-- Header Section Start -->
     <header>
+        <div id="particles-js"></div>
         <div class="container">
             <nav>
                 <div class="logo">
@@ -28,13 +31,12 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <!-- Dark Mode Switcher -->
-                <div class="theme-switch-wrapper">
+                <!-- <div class="theme-switch-wrapper">
                     <label class="theme-switch" for="checkbox">
-                      <input type="checkbox" id="checkbox" />
-                      <div class="slider round"></div>
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
                     </label>
-                    <!-- <div class="description">Dark Mode</div> -->
-                </div>
+                </div> -->
                 <div class="let-talk">
                     <a href="#contact" class="btn-let-talk">Let's Talk</a>
                 </div>
@@ -63,8 +65,8 @@
     <!-- Header Section End -->
     <!-- Banner Section Start -->
     <section id="banner" class="banner">
-        <div class="container">
-            <div class="left flex-item">
+        <div class="container flex">
+            <div class="left">
                 <p class="greeting">I'm</p>
                 <h1 id="name">Hein Htet Aung</h1>
                 <h2 id="career"></h2>
@@ -81,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="right flex-item">
+            <div class="right ">
                 <img src="./image/programmer.svg" alt="profile">
             </div>
         </div>
@@ -89,201 +91,259 @@
     <!-- Banner Section End -->
     <!-- About Section Start -->
     <section id="about" class="about">
-        <h1>ABOUT <span id="me">ME</span></h1>
-        <div class="profile">
-            <!-- <div class="profile-image">
-                <img src="./image/profile.svg" width="200px" height="200px">
-            </div> -->
-            <div class="profile-content">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, perspiciatis? Voluptas,
-                    praesentium?</p>
-            </div>
-        </div>
-        <div class="edu-ex">
-            <h3 style="text-align: center;"><span>Eduacation & Work Experience</span></h3>
-            <div class="work">
-                <div class="eduation-section flex-item">
-                    <div class="sub-icon">
-                        <span class="edu-work-icon icon">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </span>
-                    </div>
-                    <div class="description flex-item">
-                        <div class="duration">
-                            2013 - 2019
-                        </div>
-                        <h3>Bachelor of IT Engineering</h3>
-                        <p>Technological University Thanlyin</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eligendi!</p>
-                    </div>
-                </div>
-                <div class="work-experience-section flex-item">
-                    <div class="sub-icon">
-                        <span class="edu-work-icon icon">
-                            <i class="fa-solid fa-briefcase" style="color: #178573; font-size: 32px;"></i>
-                        </span>
-                    </div>
-                    <div class="description flex-item">
-                        <div class="duration">
-                            2019 May - 2019 July
-                        </div>
-                        <h3>Internship Web Developer</h3>
-                        <p>DataFocus Co.,Ltd</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eligendi!</p>
-                    </div>
+        <div class="container">
+            <h1>ABOUT <span id="me">ME</span></h1>
+            <div class="profile">
+                <!-- <div class="profile-image">
+                    <img src="./image/profile.svg" width="200px" height="200px">
+                </div> -->
+                <div class="profile-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, perspiciatis? Voluptas,
+                        praesentium?</p>
                 </div>
             </div>
-        </div>
-        <!-- Programming Skills Section Start -->
-        <div class="programming">
-            <h3 style="text-align: center;"><span>Programming Skills</span></h3>
-            <div class="skills">
-                <div class="skill-left flex-item">
-                    <div class="skill-main">
-                        <div class="skill-wrrap">
-                            <div class="skill-name">HTML</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="90"></div>
-                            </div>
+            <div class="edu-ex">
+                <h2 style="text-align: center;"><span>Eduacation & Work Experience</span></h2>
+                <div class="work flex">
+                    <!-- BE IT -->
+                    <div class="eduation-section ">
+                        <div class="sub-icon">
+                            <span class="edu-work-icon icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </span>
                         </div>
-
-                        <div class="skill-wrrap">
-                            <div class="skill-name">CSS</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="70"></div>
+                        <div class="description ">
+                            <div class="duration">
+                                2013 - 2019
                             </div>
-                        </div>
-
-                        <div class="skill-wrrap flex-item">
-                            <div class="skill-name">Javascript</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="60"></div>
-                            </div>
+                            <h3>Bachelor of IT Engineering</h3>
+                            <p>Technological University Thanlyin</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eligendi!</p>
                         </div>
                     </div>
-                </div>
-                <div class="skill-right flex-item">
-                    <div class="skill-main">
-                        <div class="skill-wrrap">
-                            <div class="skill-name">PHP</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="90"></div>
-                            </div>
+                    <!-- Japanese Language -->
+                    <div class="eduation-section ">
+                        <div class="sub-icon">
+                            <span class="edu-work-icon icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </span>
                         </div>
-
-                        <div class="skill-wrrap">
-                            <div class="skill-name">Laravel</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="70"></div>
+                        <div class="description ">
+                            <div class="duration">
+                                2022 May - 2022 July
                             </div>
+                            <h3>Japanese Language N4</h3>
+                            <p>Taishi Vocational Colleage</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eligendi!</p>
                         </div>
-
-                        <div class="skill-wrrap">
-                            <div class="skill-name">React</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="60"></div>
+                    </div>
+                    <!-- Intership Web Developer -->
+                    <div class="work-experience-section ">
+                        <div class="sub-icon">
+                            <span class="edu-work-icon icon">
+                                <i class="fa-solid fa-briefcase" style="color: #178573; font-size: 32px;"></i>
+                            </span>
+                        </div>
+                        <div class="description ">
+                            <div class="duration">
+                                2019 May - 2019 July
                             </div>
+                            <h3>Internship Web Developer</h3>
+                            <p>DataFocus Co.,Ltd</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eligendi!</p>
+                        </div>
+                    </div>
+                    <!-- Junior Web Developer -->
+                    <div class="work-experience-section ">
+                        <div class="sub-icon">
+                            <span class="edu-work-icon icon">
+                                <i class="fa-solid fa-briefcase" style="color: #178573; font-size: 32px;"></i>
+                            </span>
+                        </div>
+                        <div class="description ">
+                            <div class="duration">
+                                2020 Dec - 2023 March
+                            </div>
+                            <h3>Junior Web Developer</h3>
+                            <p>AndFun Yangon Co.,Ltd</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, eligendi!</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Programming Skills Section Start -->
+            <div class="programming">
+                <h2 style="text-align: center;"><span>Programming Skills</span></h2>
+                <div class="skills flex">
+                    <div class="skill-left ">
+                        <div class="skill-main">
+                            <div class="skill-wrrap">
+                                <div class="skill-name">HTML</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-wrrap">
+                                <div class="skill-name">CSS</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="70"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-wrrap ">
+                                <div class="skill-name">Javascript</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-right ">
+                        <div class="skill-main">
+                            <div class="skill-wrrap">
+                                <div class="skill-name">PHP</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-wrrap">
+                                <div class="skill-name">Laravel</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="70"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-wrrap">
+                                <div class="skill-name">React</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="60"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Programming Skills End -->
         </div>
-        <!-- Programming Skills End -->
     </section>
     <!-- About Section End -->
     <!-- Project Section Start -->
-    <section id="projects" class="projects container">
-        This is project section.
-    </section>
+    <!-- <section id="project" class="project">
+        <div class="container">
+            <div class="wrapper">
+                <div id="buttons">
+                    <button class="button-value" onclick="filterProduct('all')">All</button>
+                    <button class="button-value" onclick="filterProduct('Topwear')">
+                        Web Development
+                    </button>
+                    <button class="button-value" onclick="filterProduct('Bottomwear')">
+                        SEO Optimization
+                    </button>
+                    <button class="button-value" onclick="filterProduct('Jacket')">
+                        UI/UX Design
+                    </button>
+                    <button class="button-value" onclick="filterProduct('Watch')">
+                        ECommerce
+                    </button>
+                </div>
+                <div id="projects"></div>
+            </div>
+        </div>
+    </section> -->
     <!-- Project Section End -->
     <!-- Blog Section Start -->
     <!-- <section id="blog" class="blog container">
-        This is blog section.
+        <h1>This is blog section.</h1>
     </section> -->
     <!-- Blog Section End -->
     <!-- Contact Section Start -->
-    <section id="contact" class="contact container">
-        <div class="contact-info flex-item">
-            <!-- <p class="heading" style="letter-spacing: 0.2rem; margin-bottom: 20px; font-weight: 700;font-size: 1.2rem;">Contact Info</p> -->
-            <table>
-                <tr>
-                    <td>
-                        <div class="icon">
-                            <i class="fa-solid fa-envelope"></i>
+    <section id="contact" class="contact">
+        <div class="container flex">
+            <div class="contact-info ">
+                <!-- <p class="heading" style="letter-spacing: 0.2rem; margin-bottom: 20px; font-weight: 700;font-size: 1.2rem;">Contact Info</p> -->
+                <table>
+                    <tr>
+                        <td>
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="detail" style="padding: 10px;">
+                                <p>heinhtetaung7715@gmail.com</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="detail" style="padding: 10px;">
+                                <p>+95 9767645621</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="icon">
+                                <i class="fa-solid fa-map-location"></i>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="detail" style="padding: 10px;">
+                                <a href="https://maps.app.goo.gl/aE9iv78j8gyNM8fw8">313, 7th floor, Ahyoegone Qtr,
+                                    Corner of
+                                    Banyardala Rd:, & 145th St, Yangon</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td colspan="2">
+                            <div class="social-links">
+                                <span class="icon"><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
+                                <span class="icon"><a href="#"><i class="fa-brands fa-square-facebook"></i></i></a></span>
+                                <span class="icon"><a href="#"><i class="fa-brands fa-square-youtube"></i></a></span>
+                            </div>
+                        </td>
+                    </tr> -->
+                </table>
+            </div>
+            <div class="contact-form ">
+                <div class="form">
+                    <h2 style="text-align: center; text-transform: uppercase; letter-spacing: 0.2rem;">Get In Touch</h2>
+                    <form action="#" class="">
+                        <div class="name">
+                            <!-- <label for="name" class="block">NAME</label> -->
+                            <input type="text" name="name" id="name" class="block" placeholder="Full Name" required>
                         </div>
-                    </td>
-                    <td>
-                        <div class="detail" style="padding: 10px;">
-                            <p>heinhtetaung7715@gmail.com</p>
+                        <div class="email">
+                            <!-- <label for="email" class="block ">EMAIL</label> -->
+                            <input type="email" name="email" id="email" class="block" placeholder="Email" required>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="icon">
-                            <i class="fa-solid fa-phone"></i>
+                        <div class="subject">
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
                         </div>
-                    </td>
-                    <td>
-                        <div class="detail" style="padding: 10px;">
-                            <p>+95 9767645621</p>
+                        <div class="message">
+                            <!-- <label for="message" class="block">MESSAGE</label> -->
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
+                                required></textarea>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="icon">
-                            <i class="fa-solid fa-map-location"></i>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="detail" style="padding: 10px;">
-                            <a href="https://maps.app.goo.gl/aE9iv78j8gyNM8fw8">313, 8th floor, Ahyoegone, Corner of
-                                Banyardala Rd:, & 145th St, Yangon 11181</a>
-                        </div>
-                    </td>
-                </tr>
-                <!-- <tr>
-                    <td colspan="2">
-                        <div class="social-links">
-                            <span class="icon"><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
-                            <span class="icon"><a href="#"><i class="fa-brands fa-square-facebook"></i></i></a></span>
-                            <span class="icon"><a href="#"><i class="fa-brands fa-square-youtube"></i></a></span>
-                        </div>
-                    </td>
-                </tr> -->
-            </table>
-        </div>
-        <div class="contact-form flex-item">
-            <div class="form">
-                <h2 style="text-align: center; text-transform: uppercase; letter-spacing: 0.2rem;">Get In Touch</h2>
-                <form action="#" class="">
-                    <div class="name">
-                        <!-- <label for="name" class="block">NAME</label> -->
-                        <input type="text" name="name" id="name" class="block" placeholder="Full Name" required>
-                    </div>
-                    <div class="email">
-                        <!-- <label for="email" class="block ">EMAIL</label> -->
-                        <input type="email" name="email" id="email" class="block" placeholder="Email" required>
-                    </div>
-                    <div class="subject">
-                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="message">
-                        <!-- <label for="message" class="block">MESSAGE</label> -->
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
-                            required></textarea>
-                    </div>
-                    <a href="#" class="btn-send"><span style="margin-right: 5px;"><i
-                                class="fa-solid fa-paper-plane"></i></span>SEND</a>
-                </form>
+                        <a href="#" class="btn-send"><span style="margin-right: 5px;"><i
+                                    class="fa-solid fa-paper-plane"></i></span>SEND</a>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
     <!-- Contact Section End -->
     <!-- Footer Section Start -->
-    <footer style="text-align: center; height: 200px; background-color: var(--black); padding: 50px;">
-        <div class="content">
+    <footer>
+        <div class="container">
             <div class="social-link">
                 <span><a href="#"><i class="fa-brands fa-square-github icon"></i></a></span>
                 <span><a href="#"><i class="fa-brands fa-square-facebook icon"></i></i></a></span>
@@ -299,6 +359,12 @@
     <script src="./js/index.js"></script>
     <script src="./js/progress-bar.js"></script>
     <script src="./js/dark-mode.js"></script>
+    <script src="./js/filter.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'assets/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
 </body>
 
 </html>

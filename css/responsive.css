@@ -1,12 +1,26 @@
 @media (max-width: 480px) {
-    .left h1 {
-        font-size: 2.5rem;
+    .left #name {
+        font-size: 2rem;
     }
 
     .container {
-        display: flex;
+        padding: 0 10px;
+    }
+
+    .flex {
         flex-direction: column;
-        justify-content: center;
+    }
+
+    .social {
+        margin-top: 20px;
+    }
+
+    .work>div {
+        max-height: 260px;
+    }
+
+    .programming .flex {
+        align-items: normal;
     }
 
     header nav ul li {
@@ -16,13 +30,17 @@
     .btn-let-talk {
         display: none;
     }
+
+    .contact-info, .contact-form .form {
+        max-width: 360px;
+    }
 }
 
 @media (max-width: 768px){
     .container {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center; */
     }
 }
 

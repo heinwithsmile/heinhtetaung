@@ -6,14 +6,13 @@
     gap: 20px;
 
     .skill-wrrap {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        margin-bottom: 20px;
 
         .skill-name {
             color: #000;
             font-size: 18px;
             font-weight: 500;
+            margin-bottom: 20px;
         }
 
         .skill-bar {

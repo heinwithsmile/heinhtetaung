@@ -12,13 +12,20 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./css/progress-bar.css">
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+    <script src="./js/particles.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <style>
+        .typed-cursor {
+            height: 2rem;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Header Section Start -->
     <header>
-        <div id="particles-js"></div>
         <div class="container">
             <nav>
                 <div class="logo">
@@ -65,11 +72,16 @@
     <!-- Header Section End -->
     <!-- Banner Section Start -->
     <section id="banner" class="banner">
+        <div id="particles-js"></div>
         <div class="container flex">
             <div class="left">
                 <p class="greeting">I'm</p>
                 <h1 id="name">Hein Htet Aung</h1>
-                <h2 id="career"></h2>
+                <!-- <h2 id="career"></h2> -->
+                <!-- Element to contain animated typing -->
+                <span id="career"></span>
+                <br>
+                <br>
                 <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
                     consectetur! In quas minima placeat id?</p>
                 <a href="#contact" class="btn-contact">Contact Me</a>
@@ -141,7 +153,7 @@
                     <div class="work-experience-section ">
                         <div class="sub-icon">
                             <span class="edu-work-icon icon">
-                                <i class="fa-solid fa-briefcase" style="color: #178573; font-size: 32px;"></i>
+                                <i class="fa-solid fa-briefcase"></i>
                             </span>
                         </div>
                         <div class="description ">
@@ -157,7 +169,7 @@
                     <div class="work-experience-section ">
                         <div class="sub-icon">
                             <span class="edu-work-icon icon">
-                                <i class="fa-solid fa-briefcase" style="color: #178573; font-size: 32px;"></i>
+                                <i class="fa-solid fa-briefcase"></i>
                             </span>
                         </div>
                         <div class="description ">
@@ -356,7 +368,7 @@
         <a href="#" class="btn-top"><i class="fa-sharp fa-solid fa-caret-up"></i></a>
     </footer>
     <!-- Footer Section End -->
-    <script src="./js/index.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
     <script src="./js/progress-bar.js"></script>
     <script src="./js/dark-mode.js"></script>
     <script src="./js/filter.js"></script>
@@ -365,6 +377,17 @@
             console.log('callback - particles.js config loaded');
         });
     </script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#career', {
+      strings: ['<strong>Web Developer</strong>', '<strong>UI/UX Designer</strong>'],
+      typeSpeed: 100,
+      smartBackspace: true,
+      breakLines: false,
+      autoStart: true,
+      loop: true,
+    });
+  </script>
 </body>
 
 </html>

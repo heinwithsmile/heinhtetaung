@@ -21,6 +21,7 @@
 
     .programming .flex {
         align-items: normal;
+        gap: 10px;
     }
 
     header nav ul li {

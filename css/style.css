@@ -1,3 +1,12 @@
+@keyframes increaseHeight {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 200px; /* Set the final height value here */
+    }
+}
+
 header nav {
     height: 100px;
     width: 100%;
@@ -24,7 +33,7 @@ header nav ul li {
 header nav ul li a {
     cursor: pointer;
     text-decoration: none;
-    color: var(--dark);
+    color: var(--btn-color);
 }
 
 header nav ul li a:hover {
@@ -47,9 +56,38 @@ header nav ul li a:hover {
 
 /* BANNER SECTION */
 
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .left,
 .right {
     flex: 1;
+}
+
+.left {
+    animation: slideInFromLeft 3s ease-in;
+}
+
+.right {
+    animation: slideInFromRight 3s ease-in;
 }
 
 .left .greeting,
@@ -144,6 +182,17 @@ header nav ul li a:hover {
     position: relative;
 }
 
+/* .edu-work-icon::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 200px;
+    position: absolute;
+    left: 20px;
+    top: 45px;
+    background-color: var(--primary-color);
+    transition: height 2s ease;
+} */
 .edu-work-icon::after {
     content: "";
     display: inline-block;
@@ -153,6 +202,7 @@ header nav ul li a:hover {
     left: 20px;
     top: 45px;
     background-color: var(--primary-color);
+    animation: increaseHeight 2s ease forwards;
 }
 
 .duration {
@@ -293,9 +343,18 @@ footer {
     bottom: 20px;
 }
 
+.copy-right {
+    margin-top: 20px;
+}
+
+.icon-white {
+    font-size: 32px;
+    margin-right: 20px;
+}
+
 /* Toggle Switch */
 
-.theme-switch-wrapper {
+/* .theme-switch-wrapper {
     display: flex;
     align-items: center;
     text-align: center;
@@ -303,7 +362,7 @@ footer {
     position: absolute;
     top: 0.5rem;
     right: 0;
-}
+} */
 
 .description {
     margin-left: 3.25rem;
@@ -343,7 +402,7 @@ footer {
 }
 
 input:checked+.slider {
-    background-color: var(--button-color);
+    background-color: var(--btn-color);
 }
 
 input:checked+.slider:before {

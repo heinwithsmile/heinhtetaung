@@ -6,6 +6,7 @@
     --secondary-color: #27DEBF;
     --dark: #37474F;
     --light: #FFFFFF;
+    --btn-color: #37474F;
     /* --primary-color: rgba(13, 110, 139, 0.75); */
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;
@@ -16,7 +17,7 @@
     --primary-color: #FCFDFD;
     --secondary-color: #818386;
     --bg-color: #010712;
-    --button-color: #818386;
+    --btn-color: #818386;
     --h1-color: #FCFDFD;
 }
 
@@ -37,7 +38,7 @@ body {
 .container{
     max-width: 1100px;
     margin: 0 auto;
-    overflow: auto;
+    overflow: visible;
 }
 
 img {

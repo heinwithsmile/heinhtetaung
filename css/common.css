@@ -1,24 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-:root {
+/* :root {
     --primary-color: #178573;
     --secondary-color: #27DEBF;
     --dark: #37474F;
     --light: #FFFFFF;
     --btn-color: #37474F;
-    /* --primary-color: rgba(13, 110, 139, 0.75); */
     --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;
+} */
+
+:root {
+    --primary-color: #178573;
+    --secondary-color: #27DEBF;
+    --primary-bg: #FFFFFF;
+    --secondary-bg: #F5F5F5;
+    --tertiary-bg: #EDEDED;
+    --primary-text: #333333;
+    --secondary-text: #757575;
+    --accent-color: #4CAF50;
+    --overlay-color: rgba(24, 39, 51 , 0.85);
 }
 
 /* FOR DARK MODE */
 [data-theme="dark"] {
-    --primary-color: #FCFDFD;
+    /* --primary-color: #FCFDFD;
     --secondary-color: #818386;
     --bg-color: #010712;
     --btn-color: #818386;
-    --h1-color: #FCFDFD;
+    --h1-color: #FCFDFD; */
+    --primary-color: #FCFDFD;
+    --secondary-color: #818386;
+    --primary-bg: #1E1E1E; /* Dark background color */
+    --secondary-bg: #2E2E2E; /* Slightly lighter background for panels */
+    --tertiary-bg: #333333; /* Background for cards and sections */
+    --primary-text: #EAEAEA; /* Light text color for dark background */
+    --secondary-text: #B0B0B0; /* Dimmed text color for secondary information */
+    --accent-color: #4CAF50; /* Bright green accent color */
+    --error-color: #FF5252; /* Red color for error messages */
+    --overlay-color: rgba(0, 0, 0, 0.6); /* Dark overlay for modals and popups */
+    --divider-color: #424242; /* Color for dividing lines */
+    --shadow-color: rgba(0, 0, 0, 0.2); /* Shadow color for elements */
 }
 
 *{
@@ -31,8 +54,8 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
-    background-color: var(--bg-color);
+    color: var(--primary-text);
+    background-color: var(--primary-bg);
 }
 
 .container{

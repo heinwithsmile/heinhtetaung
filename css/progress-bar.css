@@ -9,7 +9,7 @@
   margin-bottom: 20px;
 }
 .skill-main .skill-wrrap .skill-name {
-  color: #000;
+  color: var(--primary-text);
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;

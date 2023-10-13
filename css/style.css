@@ -33,7 +33,7 @@ header nav ul li {
 header nav ul li a {
     cursor: pointer;
     text-decoration: none;
-    color: var(--btn-color);
+    color: var(--primary-text);
 }
 
 header nav ul li a:hover {
@@ -138,13 +138,13 @@ header nav ul li a:hover {
 }
 
 .social a {
-    color: var(--dark);
+    color: var(--primary-text);
 }
 
 .social .line {
     width: 20px;
     height: 2px;
-    background-color: var(--dark);
+    background-color: var(--primary-text);
 }
 
 /*---------------- ABOUT SECTION ----------------*/
@@ -262,7 +262,7 @@ header nav ul li a:hover {
 }
 
 .contact-form {
-    background-color: var(--light);
+    /* background-color: var(--light); */
     color: var(--dark);
     height: 600px;
 }
@@ -337,7 +337,7 @@ footer {
 .btn-top {
     padding: 10px 20px;
     background-color: var(--primary-color);
-    color: var(--light) !important;
+    color: var(--primary-text);
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -380,7 +380,7 @@ footer {
 }
 
 .slider {
-    background-color: #ccc;
+    background-color: var(--secondary-color);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -402,7 +402,7 @@ footer {
 }
 
 input:checked+.slider {
-    background-color: var(--btn-color);
+    background-color: var(--secondary-color);
 }
 
 input:checked+.slider:before {

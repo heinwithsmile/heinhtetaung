@@ -13,7 +13,6 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
 }
 
 header nav .logo-name {
@@ -33,7 +32,7 @@ header nav ul li {
 header nav ul li a {
     cursor: pointer;
     text-decoration: none;
-    color: var(--primary-text);
+    color: var(--body-text);
 }
 
 header nav ul li a:hover {
@@ -92,7 +91,7 @@ header nav ul li a:hover {
 
 .left .greeting,
 .left #career {
-    color: var(--dark);
+    color: var(--body-text);
     padding: 10px;
     font-size: 1.5rem;
 }
@@ -110,19 +109,16 @@ header nav ul li a:hover {
     text-decoration: none;
     display: inline-block;
     padding: 15px 50px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border-radius: 50px;
-    color: #FFF;
+    color: var(--body-text);
     font-weight: bold;
     cursor: pointer;
 }
 
 .btn-contact:hover,
 .btn-let-talk:hover {
-    background-color: #fff;
-    border: 1px solid var(--primary-color);
-    color: #178573;
-    font-weight: bold;
+    opacity: 0.5;
 }
 
 .social {
@@ -138,13 +134,13 @@ header nav ul li a:hover {
 }
 
 .social a {
-    color: var(--primary-text);
+    color: var(--body-text);
 }
 
 .social .line {
     width: 20px;
     height: 2px;
-    background-color: var(--primary-text);
+    background-color: var(--accent-color);
 }
 
 /*---------------- ABOUT SECTION ----------------*/
@@ -154,14 +150,14 @@ header nav ul li a:hover {
     display: inline-block;
     width: 50px;
     height: 5px;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     top: 3px;
     right: 5px;
     position: relative;
 }
 
 #about h1 #me {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .edu-ex {
@@ -182,17 +178,6 @@ header nav ul li a:hover {
     position: relative;
 }
 
-/* .edu-work-icon::after {
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 200px;
-    position: absolute;
-    left: 20px;
-    top: 45px;
-    background-color: var(--primary-color);
-    transition: height 2s ease;
-} */
 .edu-work-icon::after {
     content: "";
     display: inline-block;
@@ -201,7 +186,7 @@ header nav ul li a:hover {
     position: absolute;
     left: 20px;
     top: 45px;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     animation: increaseHeight 2s ease forwards;
 }
 
@@ -211,7 +196,7 @@ header nav ul li a:hover {
     height: 30px;
     padding: 5px;
     font-size: 1rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-color);
     text-align: center;
     border-radius: 30px;
     margin-bottom: 15px;
@@ -262,8 +247,7 @@ header nav ul li a:hover {
 }
 
 .contact-form {
-    /* background-color: var(--light); */
-    color: var(--dark);
+    color: var(--body-text);
     height: 600px;
 }
 
@@ -287,7 +271,7 @@ form input[type="email"] {
 
 form input[type="text"]:focus,
 form input[type="email"]:focus {
-    border-color: var(--primary-color);
+    border-color: var(--accent-color);
     outline: none;
 }
 
@@ -302,7 +286,7 @@ form textarea {
 
 form textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color: var(--accent-color);
 }
 
 form label {
@@ -315,7 +299,7 @@ form label {
     padding: 10px 50px;
     width: 200px;
     height: 50px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--light);
     letter-spacing: 2px;
 }
@@ -327,17 +311,17 @@ form label {
 
 /* FOOTER SECTION */
 footer {
-    background-color: var(--dark);
+    background-color: var(--primary-color);
     height: 300px;
     text-align: center;
-    color: var(--light);
+    color: var(--body-text);
     padding: 100px 0;
 }
 
 .btn-top {
     padding: 10px 20px;
     background-color: var(--primary-color);
-    color: var(--primary-text);
+    color: var(--body-text);
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -380,7 +364,7 @@ footer {
 }
 
 .slider {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -391,7 +375,7 @@ footer {
 }
 
 .slider:before {
-    background-color: #fff;
+    background-color: var(--accent-color);
     bottom: 0.25rem;
     content: "";
     width: 26px;
@@ -402,7 +386,7 @@ footer {
 }
 
 input:checked+.slider {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 input:checked+.slider:before {
@@ -424,5 +408,5 @@ input:checked+.slider:before {
     font-size: 0.75rem;
     text-transform: uppercase;
     font-family: 'Jost';
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }

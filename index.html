@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./css/progress-bar.css">
+    <link rel="stylesheet" href="./css/gallery.css">
     <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
     <!-- <script src="./js/particles.js"></script> -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -27,8 +28,8 @@
                 </div>
                 <ul class="pc-menu">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="https://hein.shop.com.mm">Shop</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <!-- <li><a href="https://hein.shop.com.mm">Shop</a></li> -->
                     <!-- <li><a href="#blog">Blog</a></li> -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -54,8 +55,8 @@
                         <div>
                             <ul>
                                 <li><a href="#about">About</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="https://hein.shop.com.mm">Shop</a></li>
+                                <li><a href="#project">Projects</a></li>
+                                <!-- <li><a href="https://hein.shop.com.mm">Shop</a></li> -->
                                 <!-- <li><a href="#blog">Blog</a></li> -->
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
@@ -106,7 +107,10 @@
                     <img src="./image/profile.svg" width="200px" height="200px">
                 </div> -->
                 <div class="profile-content">
-                    <p>Hello there! 👋 Welcome to my corner of the internet. I'm /* Hein Htet Aung */, a passionate and innovative developer dedicated to crafting exceptional digital experiences. Whether it's creating elegant websites, developing robust applications, or solving complex technical challenges, I thrive on turning ideas into reality through code.</p>
+                    <p>Hello there! 👋 Welcome to my corner of the internet. I'm /* Hein Htet Aung */, a passionate and
+                        innovative developer dedicated to crafting exceptional digital experiences. Whether it's
+                        creating elegant websites, developing robust applications, or solving complex technical
+                        challenges, I thrive on turning ideas into reality through code.</p>
                 </div>
             </div>
             <div class="edu-ex">
@@ -237,34 +241,71 @@
     </section>
     <!-- About Section End -->
     <!-- Project Section Start -->
-    <!-- <section id="project" class="project">
+    <section id="project" class="project">
         <div class="container">
-            <div class="wrapper">
-                <div id="buttons">
-                    <button class="button-value" onclick="filterProduct('all')">All</button>
-                    <button class="button-value" onclick="filterProduct('Topwear')">
-                        Web Development
-                    </button>
-                    <button class="button-value" onclick="filterProduct('Bottomwear')">
-                        SEO Optimization
-                    </button>
-                    <button class="button-value" onclick="filterProduct('Jacket')">
-                        UI/UX Design
-                    </button>
-                    <button class="button-value" onclick="filterProduct('Watch')">
-                        ECommerce
-                    </button>
+            <h1 id="my-project">MY PROJECTS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus officia tenetur ipsa quisquam quaerat nemo magni fugit, error similique?</p>
+            <div class="row">
+                <div id="tabs">
+                    <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+                    <button class="btn" onclick="filterSelection('web')"> Web Application</button>
+                    <button class="btn" onclick="filterSelection('mobile')"> Mobile Application</button>
+                    <button class="btn" onclick="filterSelection('api')"> API</button>
                 </div>
-                <div id="projects"></div>
+                <div class="flex">
+                    <div class="column web">
+                        <div class="content">
+                            <img src="./image/rating-management.png" alt="Web Application">
+                            <h4>HR Management System</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero voluptatibus ipsa beatae.</p>
+                            <a class="btn" href="#">View Demo</a>
+                        </div>
+                    </div>
+                    <div class="column web">
+                        <div class="content">
+                            <img src="./image/uni-help.png" alt="Web Application">
+                            <h4>HR Management System</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero voluptatibus ipsa beatae.</p>
+                            <a class="btn" href="#">View Demo</a>
+                        </div>
+                    </div>
+                    <div class="column web">
+                        <div class="content">
+                            <img src="./image/hr.png" alt="Web Application">
+                            <h4>HR Management System</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero voluptatibus ipsa beatae.</p>
+                            <a class="btn" href="#">View Demo</a>
+                        </div>
+                    </div>
+                    <div class="column web">
+                        <div class="content">
+                            <img src="./image/bangkok_madam.png" alt="Web Application">
+                            <h4>HR Management System</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero voluptatibus ipsa beatae.</p>
+                            <a class="btn" href="#">View Demo</a>
+                        </div>
+                    </div>
+                    <div class="column mobile">
+                        <div class="content">
+                            <img src="./image/welkids.png" alt="Web Application">
+                            <h4>HR Management System</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero voluptatibus ipsa beatae.</p>
+                            <a class="btn" href="#">View Demo</a>
+                        </div>
+                    </div>
+                    <div class="column mobile">
+                        <div class="content">
+                            <img src="./image/welnejp.png" alt="Web Application">
+                            <h4>HR Management System</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero voluptatibus ipsa beatae.</p>
+                            <a class="btn" href="#">View Demo</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section> -->
+        </div>    
+    </section>
     <!-- Project Section End -->
-    <!-- Blog Section Start -->
-    <!-- <section id="blog" class="blog container">
-        <h1>This is blog section.</h1>
-    </section> -->
-    <!-- Blog Section End -->
     <!-- Contact Section Start -->
     <section id="contact" class="contact">
         <div class="container flex">
@@ -367,22 +408,23 @@
     <script src="./js/progress-bar.js"></script>
     <script src="./js/dark-mode.js"></script>
     <script src="./js/filter.js"></script>
+    <script src="./js/gallery.js"></script>
     <script>
         particlesJS.load('particles-js', 'assets/particles.json', function () {
             console.log('callback - particles.js config loaded');
         });
     </script>
     <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#career', {
-      strings: ['<strong>Web Developer</strong>', '<strong>UI/UX Designer</strong>'],
-      typeSpeed: 100,
-      smartBackspace: true,
-      breakLines: false,
-      autoStart: true,
-      loop: true,
-    });
-  </script>
+    <script>
+        var typed = new Typed('#career', {
+            strings: ['<strong>Web Developer</strong>', '<strong>UI/UX Designer</strong>'],
+            typeSpeed: 100,
+            smartBackspace: true,
+            breakLines: false,
+            autoStart: true,
+            loop: true,
+        });
+    </script>
 </body>
 
 </html>

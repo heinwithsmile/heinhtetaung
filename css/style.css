@@ -7,6 +7,12 @@
     }
 }
 
+header {
+    width: 100%;
+    /* position: fixed;
+    top: 0; */
+}
+
 header nav {
     height: 100px;
     width: 100%;
@@ -90,6 +96,15 @@ header nav ul li a:hover {
     animation: slideInFromRight 3s ease-in;
 }
 
+.right-content {
+    width: 545px;
+    height: 510px;
+    /* border-radius: 50%; */
+    background: url(../image/banner-latest.png) no-repeat center;
+    /* background-size: 800px 620px; */
+    margin-bottom: 110px;
+}
+
 .left .greeting,
 .left #career {
     color: var(--dark);
@@ -98,7 +113,7 @@ header nav ul li a:hover {
 }
 
 .left #name {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-size: 3rem;
     font-weight: bold;
     color: var(--primary-color);
@@ -248,6 +263,9 @@ header nav ul li a:hover {
 }
 
 /* CONTACT SECTION */
+#contact {
+    margin-bottom: 100px;
+}
 
 #contact .flex>div {
     flex: 1;
@@ -260,12 +278,12 @@ header nav ul li a:hover {
 .contact-form {
     /* background-color: var(--light); */
     color: var(--dark);
-    height: 600px;
+    height: 650px;
 }
 
 .contact-form .form {
     width: 500px;
-    height: 550px;
+    height: 600px;
     margin: 10px;
     padding: 50px;
     box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3), 2px 1px 5px rgba(0, 0, 0, 0.3);
@@ -274,6 +292,7 @@ header nav ul li a:hover {
 
 form input[type="text"],
 form input[type="email"] {
+    font-family: 'Space Mono', monospace;
     border: none;
     background: none;
     width: 100%;
@@ -288,6 +307,7 @@ form input[type="email"]:focus {
 }
 
 form textarea {
+    font-family: 'Space Mono', monospace;
     text-decoration: none;
     border: none;
     background: none;
@@ -423,6 +443,6 @@ input:checked+.slider:before {
     margin: 0.125rem 0;
     font-size: 0.75rem;
     text-transform: uppercase;
-    font-family: 'Jost';
+    /* font-family: 'Jost'; */
     color: var(--secondary-color);
 }

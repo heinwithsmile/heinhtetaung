@@ -1,4 +1,14 @@
 @media (max-width: 480px) {
+    section {
+        padding: 0px;
+        margin-top: 80px;
+    }
+
+    .right-content {
+        max-width: 375px;
+        margin-bottom: 10px;
+    }
+
     .left #name {
         font-size: 2rem;
     }
@@ -9,10 +19,15 @@
 
     .flex {
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     .work>div {
         max-height: 260px;
+    }
+
+    .programming {
+        margin-top: 80px;
     }
 
     .programming .flex {
@@ -31,11 +46,22 @@
     .contact-info, .contact-form .form {
         max-width: 360px;
     }
+
+    .social {
+        margin: 20px auto;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+
 }
 
 @media (max-width: 768px){
    #banner .flex {
-    flex-direction: column-reverse;
+    flex-direction: column;
    }
 
 

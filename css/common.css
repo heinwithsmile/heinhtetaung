@@ -28,23 +28,17 @@
 
 /* FOR DARK MODE */
 [data-theme="dark"] {
-    /* --primary-color: #FCFDFD;
-    --secondary-color: #818386;
-    --bg-color: #010712;
-    --btn-color: #818386;
-    --h1-color: #FCFDFD; */
-    --primary-color: #FCFDFD;
-    --secondary-color: #818386;
-    --primary-bg: #010712; /* Dark background color */
-    --secondary-bg: #2E2E2E; /* Slightly lighter background for panels */
-    --tertiary-bg: #333333; /* Background for cards and sections */
-    --primary-text: #EAEAEA; /* Light text color for dark background */
-    --secondary-text: #B0B0B0; /* Dimmed text color for secondary information */
-    --accent-color: #4CAF50; /* Bright green accent color */
-    --error-color: #FF5252; /* Red color for error messages */
-    --overlay-color: rgba(0, 0, 0, 0.6); /* Dark overlay for modals and popups */
-    --divider-color: #424242; /* Color for dividing lines */
-    --shadow-color: rgba(0, 0, 0, 0.2); /* Shadow color for elements */
+    --primary-color: #27DEBF;
+    --secondary-color: #178573;
+    --primary-bg: #333333;
+    --secondary-bg: #2C2C2C;
+    --tertiary-bg: #474747;
+    --primary-text: #FFFFFF;
+    --secondary-text: #BFBFBF;
+    --dark: #000000;
+    --light: #333333;
+    --accent-color: #4CAF50;
+    --overlay-color: rgba(24, 39, 51 , 0.85);
 }
 
 *{

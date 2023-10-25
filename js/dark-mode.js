@@ -1,4 +1,4 @@
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const toggleSwitch = document.querySelector('#darkmode-toggle');
 
 function switchTheme(e) {
     if (e.target.checked) {

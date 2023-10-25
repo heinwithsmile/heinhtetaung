@@ -16,6 +16,71 @@
     <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
     <!-- <script src="./js/particles.js"></script> -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <style>
+        .toggle {
+            font-size: 2rem;
+            /* 👈 change this to scale */
+            border: .125em solid currentColor;
+            border-radius: 2em;
+            cursor: pointer;
+            display: block;
+            height: 2em;
+            position: relative;
+            width: 3.75em;
+        }
+
+        .toggle span {
+            background-color: currentColor;
+            border-radius: 2em;
+            display: block;
+            height: 1.5em;
+            left: .25em;
+            overflow: hidden;
+            position: absolute;
+            top: .25em;
+            text-indent: -9999px;
+            transition: left .25s;
+            width: 1.5em;
+            z-index: 2;
+        }
+
+        .toggle::before,
+        .toggle::after {
+            content: '';
+            display: block;
+            border-radius: 1em;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .toggle::after {
+            box-shadow: .25em .25em #5901d8;
+            height: 1.125em;
+            right: .9em;
+            top: .125em;
+            width: 1.125em;
+        }
+
+        .toggle::before {
+            background-color: #ffc409;
+            height: .625em;
+            outline: .25em dotted #ffc409;
+            outline-offset: .125em;
+            left: .7em;
+            top: .7em;
+            width: .625em;
+        }
+
+        input:checked~.toggle span {
+            left: 2em;
+        }
+
+        .sr-only {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,6 +105,10 @@
                         <div class="slider round"></div>
                     </label>
                 </div> -->
+                <!-- <input type="checkbox" class="sr-only" id="darkmode-toggle">
+                <label for="darkmode-toggle" class="toggle">
+                    <span></span>
+                </label> -->
                 <div class="let-talk">
                     <a href="#contact" class="btn-let-talk">Let's Talk</a>
                 </div>
@@ -247,7 +316,8 @@
     <section id="project" class="project">
         <div class="container">
             <h1 id="my-project">MY PROJECTS</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus officia tenetur ipsa quisquam quaerat nemo magni fugit, error similique?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus officia tenetur ipsa quisquam
+                quaerat nemo magni fugit, error similique?</p>
             <div class="row">
                 <div id="tabs">
                     <button class="btn active" onclick="filterSelection('all')"> Show All</button>
@@ -260,7 +330,8 @@
                         <div class="content">
                             <img src="./image/rating-management.png" alt="Web Application">
                             <h4>HR Management System</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero voluptatibus ipsa beatae.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero
+                                voluptatibus ipsa beatae.</p>
                             <a class="btn btn-view-demo" href="#">View Demo</a>
                         </div>
                     </div>
@@ -268,7 +339,8 @@
                         <div class="content">
                             <img src="./image/uni-help.png" alt="Web Application">
                             <h4>HR Management System</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero voluptatibus ipsa beatae.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero
+                                voluptatibus ipsa beatae.</p>
                             <a class="btn btn-view-demo" href="#">View Demo</a>
                         </div>
                     </div>
@@ -276,7 +348,8 @@
                         <div class="content">
                             <img src="./image/hr.png" alt="Web Application">
                             <h4>HR Management System</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero voluptatibus ipsa beatae.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero
+                                voluptatibus ipsa beatae.</p>
                             <a class="btn btn-view-demo" href="#">View Demo</a>
                         </div>
                     </div>
@@ -284,7 +357,8 @@
                         <div class="content">
                             <img src="./image/bangkok_madam.png" alt="Web Application">
                             <h4>HR Management System</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero voluptatibus ipsa beatae.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero
+                                voluptatibus ipsa beatae.</p>
                             <a class="btn btn-view-demo" href="#">View Demo</a>
                         </div>
                     </div>
@@ -292,7 +366,8 @@
                         <div class="content">
                             <img src="./image/welkids.png" alt="Web Application">
                             <h4>HR Management System</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero voluptatibus ipsa beatae.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero
+                                voluptatibus ipsa beatae.</p>
                             <a class="btn btn-view-demo" href="#">View Demo</a>
                         </div>
                     </div>
@@ -300,13 +375,14 @@
                         <div class="content">
                             <img src="./image/welnejp.png" alt="Web Application">
                             <h4>HR Management System</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero voluptatibus ipsa beatae.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi molestiae vero
+                                voluptatibus ipsa beatae.</p>
                             <a class="btn btn-view-demo" href="#">View Demo</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
     <!-- Project Section End -->
     <!-- Contact Section Start -->

@@ -1,53 +1,30 @@
-/* .row {
-    margin: 8px -16px;
-  } */
-  
-  /* Add padding BETWEEN each column (if you want) */
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
-  
-  /* Create three equal columns that floats next to each other */
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+.column {
+  display: none;
+  width: 32%;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.btn.active {
+  background-color: var(--primary-color);
+  font-weight: bold;
+}
+
+#tabs {
+  margin: 50px auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
   .column {
-    display: none;
-    width: 32%;
-    padding: 10px;
+    width: 100%;
   }
-  
-  /* Clear floats after rows */
-  /* .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  } */
-  
-  /* Content */
-  /* .content {
-    background-color: white;
-    padding: 10px;
-  } */
-  
-  /* The "show" class is added to the filtered elements */
-  .show {
-    display: block;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  
-  /* Add a dark background color to the active button */
-  .btn.active {
-    background-color: var(--primary-color);
-    font-weight: bold;
-  }
-
-  #tabs {
-    margin: 50px auto;
-    text-align: center;
-  }
-
-  @media screen and (max-width: 768px) {
-      .column {
-        width: 100%;
-      }
-  }
+}

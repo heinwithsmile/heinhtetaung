@@ -17,9 +17,8 @@
     <!-- <script src="./js/particles.js"></script> -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <style>
-        .toggle {
+        /* .toggle {
             font-size: 2rem;
-            /* 👈 change this to scale */
             border: .125em solid currentColor;
             border-radius: 2em;
             cursor: pointer;
@@ -73,13 +72,7 @@
 
         input:checked~.toggle span {
             left: 2em;
-        }
-
-        .sr-only {
-            position: absolute;
-            left: -9999px;
-            opacity: 0;
-        }
+        } */
     </style>
 </head>
 
@@ -92,20 +85,25 @@
                     <a href="#" class="">HEIN</a>
                 </div>
                 <ul class="pc-menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#project">Projects</a></li>
+                    <li><a href="index.html" class="active">&lt; Top &gt;</a></li>
+                    <li><a href="#about">&lt; About &gt;</a></li>
+                    <li><a href="#project">&lt; Projects &gt;</a></li>
                     <!-- <li><a href="https://hein.shop.com.mm">Shop</a></li> -->
                     <!-- <li><a href="#blog">Blog</a></li> -->
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">&lt; Contact &gt;</a></li>
                 </ul>
                 <!-- Dark Mode Switcher -->
-                <!-- <div class="theme-switch-wrapper">
-                    <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
-                        <div class="slider round"></div>
-                    </label>
-                </div> -->
-                <!-- <input type="checkbox" class="sr-only" id="darkmode-toggle">
+                <div class="flex">
+                    <p>Light</p>
+                    <div class="theme-switch-wrapper">
+                        <label id="theme-switch" class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round"></div>
+                        </label>
+                    </div>
+                    <p>Dark</p>
+                </div>
+                <!-- <input type="checkbox" class="sr-only" id="theme-switch">
                 <label for="darkmode-toggle" class="toggle">
                     <span></span>
                 </label> -->
@@ -164,7 +162,6 @@
             </div>
             <div class="right">
                 <div class="right-content">
-                    <!-- <img src="./image/profile.png" alt="profile"> -->
                 </div>
             </div>
         </div>
@@ -461,7 +458,7 @@
                                 required></textarea>
                         </div>
                         <a href="#" class="btn-send"><span style="margin-right: 5px;"><i
-                                    class="fa-solid fa-paper-plane"></i></span>SEND</a>
+                                    class="fa-solid fa-paper-plane"></i></span>Send</a>
                     </form>
                 </div>
             </div>

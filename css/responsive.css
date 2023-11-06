@@ -5,7 +5,8 @@
     }
 
     .right-content {
-        max-width: 375px;
+        width: 400px;
+        height: 500px;
         margin-bottom: 10px;
     }
 
@@ -43,7 +44,8 @@
         display: none;
     }
 
-    .contact-info, .contact-form .form {
+    .contact-info,
+    .contact-form .form {
         max-width: 360px;
     }
 
@@ -55,19 +57,26 @@
         width: 100%;
         text-align: center;
     }
-
-
-}
-
-@media (max-width: 768px){
-   #banner .flex {
-    flex-direction: column;
-   }
-
-
 }
 
 @media screen and (max-width: 992px) {
+    .container {
+        padding: 0px 10px;
+    }
+
+    #banner .flex {
+        flex-direction: column;
+    }
+
+    .right {
+        flex-basis: 100%;
+    }
+
+    .right-content {
+        width: 990px;
+        height: 800px;
+    }
+
     .let-talk {
         display: none;
     }

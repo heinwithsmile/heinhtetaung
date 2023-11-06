@@ -87,7 +87,7 @@ section {
 }
 
 .active {
-    font-weight: bold;
+    color: var(--primary-color);
 }
 
 /* FLEX BOX*/

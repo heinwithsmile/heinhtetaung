@@ -1,3 +1,4 @@
+/* For Mobile Devices */
 @media (max-width: 480px) {
     section {
         padding: 0px;
@@ -59,6 +60,7 @@
     }
 }
 
+/* For Tablet Devices */
 @media screen and (max-width: 992px) {
     .container {
         padding: 0px 10px;

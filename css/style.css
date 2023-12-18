@@ -26,13 +26,22 @@ header nav {
     /* color: #fff; */
 }
 
+header .logo {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid;
+    padding: 0 20px;
+}
+
 header nav ul {
     display: flex;
     justify-content: center;
+    column-gap: 30px;
 }
 
 header nav ul li {
-    margin-right: 76px;
     list-style: none;
 }
 
@@ -51,13 +60,151 @@ nav ul li a:active {
     color: var(--primary-color);
 }
 
-.logo {
+/* Mobile MENU STYLES */
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  .menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+  
+  .menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    /* background: var(--primary-color); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hamburger Line */
+  .menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  
+  /* Hamburger Lines - Top & Bottom */
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+  
+  /* Moves Line Down */
+  .menu-wrap .hamburger > div::after {
+    top: 10px;
+  }
+  
+  /* Toggler Animation */
+  .menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  
+  /* Turns Lines Into X */
+  .menu-wrap .toggler:checked + .hamburger > div:before,
+  .menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  /* Rotate On Hover When Checked */
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+
+  /* Show Menu */
+  .menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition:  opacity 0.4s ease 0.4s;
+  }
+  
+  .menu-wrap .menu {
+    position: fixed;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  
+  .menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .menu-wrap .menu > div > div > ul > li {
+    list-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
     text-decoration: none;
-    color: var(--primary-color);
-    font-size: 2rem;
-    font-weight: bold;
-    border: 2px solid;
-    padding: 0 20px;
+    transition: color 0.4s ease;
+  }
+
+  /* Hide Menu Button */
+  .toggler, .hamburger {
+    visibility: hidden;
 }
 
 /* BANNER SECTION */
@@ -202,17 +349,6 @@ nav ul li a:active {
     position: relative;
 }
 
-/* .edu-work-icon::after {
-    content: "";
-    display: inline-block;
-    width: 2px;
-    height: 200px;
-    position: absolute;
-    left: 20px;
-    top: 45px;
-    background-color: var(--primary-color);
-    transition: height 2s ease;
-} */
 .edu-work-icon::after {
     content: "";
     display: inline-block;
@@ -263,10 +399,94 @@ nav ul li a:active {
     flex: 1;
 }
 
+.skill-main {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .skill-main .skill-wrrap {
+    margin-bottom: 20px;
+  }
+  
+  .skill-main .skill-wrrap .skill-name {
+    color: var(--primary-text);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  .skill-main .skill-wrrap .skill-bar {
+    height: 16px;
+    background-color: #ccc;
+    border-radius: 8px;
+  }
+  
+  .skill-main .skill-wrrap .skill-per {
+    height: 16px;
+    background: #178573;
+    border-radius: 8px;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
+  }
+  
+  .skill-main .skill-wrrap .skill-per:before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #23576f;
+    color: #fff;
+    font-size: 11px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+  }
+  
+  .skill-main .skill-wrrap .skill-per:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #23576f;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+  }
+
 /* PROJECT SECTION */
 
 #project {
     width: 100%;
+}
+
+.row,
+.row>.column {
+  padding: 8px;
+}
+
+.column {
+  display: none;
+  width: 32%;
+  padding: 10px;
+}
+
+.show {
+  display: block;
+}
+
+.btn.active {
+  background-color: var(--primary-color);
+  font-weight: bold;
+}
+
+#tabs {
+  margin: 50px auto;
+  text-align: center;
 }
 
 /* BLOG SECTION */

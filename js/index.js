@@ -35,3 +35,91 @@ function scroll (target, duration) {
     scroll(target, duration - 10);
   }, 10);
 }
+
+/* Progress Bar */
+var skillPers = document.querySelectorAll(".skill-per");
+
+skillPers.forEach(function(skillPer) {
+  var per = parseFloat(skillPer.getAttribute("per"));
+  skillPer.style.width = per + "%";
+  
+  var animatedValue = 0; 
+  var startTime = null;
+  
+  function animate(timestamp) {
+    if (!startTime) startTime = timestamp;
+    var progress = timestamp - startTime;
+    var stepPercentage = progress / 1000; // Dividing by duration in milliseconds (1000ms = 1s)
+    
+    if (stepPercentage < 1) {
+      animatedValue = per * stepPercentage;
+      skillPer.setAttribute("per", Math.floor(animatedValue) + "%");
+      requestAnimationFrame(animate);
+    } else {
+      animatedValue = per;
+      skillPer.setAttribute("per", Math.floor(animatedValue) + "%");
+    }
+  }
+  
+  requestAnimationFrame(animate);
+});
+
+/* Projects Section Tab Links */
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("tabs");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+/* Dark Mode */
+const toggleSwitch = document.querySelector('#theme-switch');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);

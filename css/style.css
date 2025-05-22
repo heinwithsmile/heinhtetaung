@@ -23,7 +23,6 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* color: #fff; */
 }
 
 header .logo {
@@ -267,7 +266,7 @@ nav ul li a:active {
 }
 
 .btn-contact,
-.btn-let-talk {
+.btn-let-talk{
     text-decoration: none;
     display: inline-block;
     padding: 15px 50px;
@@ -276,6 +275,21 @@ nav ul li a:active {
     color: #FFF;
     /* font-weight: bold; */
     cursor: pointer;
+}
+
+.btn-download {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    color: var(--light);
+}
+
+.btn-download:hover {
+    background-color: var(--primary-color);
 }
 
 .btn-view-demo {
@@ -340,7 +354,7 @@ nav ul li a:active {
 }
 
 .work>div {
-    flex: 1 1 500px;
+    flex: 1 1 30%;
     height: 300px;
     padding: 20px;
 }
@@ -413,7 +427,7 @@ nav ul li a:active {
   
   .skill-main .skill-wrrap .skill-name {
     color: var(--primary-text);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     margin-bottom: 20px;
   }
@@ -439,7 +453,7 @@ nav ul li a:active {
     padding: 4px 6px;
     background-color: #23576f;
     color: #fff;
-    font-size: 11px;
+    font-size: 7px;
     border-radius: 4px;
     top: -35px;
     right: 0;
@@ -576,10 +590,9 @@ form label {
 /* FOOTER SECTION */
 footer {
     background-color: var(--primary-color);
-    height: 300px;
     text-align: center !important;
     color: var(--light);
-    padding: 100px 0;
+    padding: 10px 0;
 }
 
 footer p {
@@ -596,11 +609,11 @@ footer p {
 }
 
 .copy-right {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .icon-white {
-    font-size: 32px;
+    font-size: 28px;
     margin-right: 20px;
 }
 

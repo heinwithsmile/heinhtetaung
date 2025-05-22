@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hein Htet Aung</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html" class="">HEIN</a>
+                </div>
+                <ul class="pc-menu">
+                    <li><a href="index.html#banner" class="active">&lt; Home &gt;</a></li>
+                    <li><a href="index.html#about">&lt; About &gt;</a></li>
+                    <li><a href="index.html#project">&lt; Projects &gt;</a></li>
+                    <li><a href="index.html#contact">&lt; Contact &gt;</a></li>
+                </ul>
+                <div>
+                    <a href="assets/HeinHtetAung-Resume-2025.pdf" class="btn-download">Download Resume</a>
+                </div>
+            </nav>
+            <!-- Mobile Menu -->
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="index.html#about">About</a></li>
+                                <li><a href="index.html#project">Projects</a></li>
+                                <li><a href="index.html#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Project Detail Start -->
+    <section class="project-detail mb-3">
+        <div class="container">
+            <h1>Student Information Center</h1>
+            <img src="./images/uni-help.png" alt="Student Information Center Screenshot" class="project-image">
+            <div class="project-info">
+                <h3>Overview</h3>
+                <p>
+                    The Student Information Center is a web application designed to help university students manage
+                    academic records, personal details, and campus announcements from one centralized platform.
+                </p>
+
+                <h3>Features</h3>
+                <ul>
+                    <li>User authentication and role-based access</li>
+                    <li>Academic record management</li>
+                    <li>Admin dashboard for content and user control</li>
+                    <li>Responsive design with Bootstrap</li>
+                    <li>Built with Laravel (PHP), JavaScript, MySQL</li>
+                </ul>
+
+                <h3>Tech Stack</h3>
+                <p>Laravel, Bootstrap, JavaScript, MySQL</p>
+
+                <h3>My Contributions</h3>
+                <p>
+                    I led the frontend development using Bootstrap and wrote RESTful routes in Laravel. I also worked on
+                    database structure and implemented user authentication.
+                </p>
+                <p>
+                    <!-- Optional if available -->
+                    <a href="./assets/student-information-center.pdf" class="btn btn-download">Download PDF</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Project Detail End -->
+    <!-- Footer Section Start -->
+    <footer>
+        <div class="container">
+            <div class="footer-social-links">
+                <span><a href="https://github.com/heinwithsmile"><i
+                            class="fa-brands fa-square-github icon-white"></i></a></span>
+                <span><a href="https://www.linkedin.com/in/hein-htet-aung-baa2aa190/"><i
+                            class="fa-brands fa-linkedin icon-white"></i></a></span>
+            </div>
+            <div class="copy-right white">
+                <p>Copyright &copy; 2025 - All Rights Reserved.</p>
+            </div>
+        </div>
+        <a href="#" class="btn-top"><i class="fa-sharp fa-solid fa-caret-up"></i></a>
+    </footer>
+    <!-- Footer Section End -->
+    <script src="./js/index.js"></script>
+    <script>
+        var typed = new Typed('#career', {
+            strings: ['<strong>Web Developer</strong>', '<strong>UI/UX Designer</strong>'],
+            typeSpeed: 100,
+            smartBackspace: true,
+            breakLines: false,
+            autoStart: true,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>

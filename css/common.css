@@ -2,16 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* :root {
-    --primary-color: #178573;
-    --secondary-color: #27DEBF;
-    --dark: #37474F;
-    --light: #FFFFFF;
-    --btn-color: #37474F;
-    --overlay-color: rgba(24, 39, 51 , 0.85);
-    --menu-speed: 0.75s;
-} */
-
 :root {
     --primary-color: #178573;
     --secondary-color: #27DEBF;
@@ -47,10 +37,14 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 12px;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     /* font-family: 'Space Mono', monospace; */
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     color: var(--primary-text);
     background-color: var(--primary-bg);
@@ -112,7 +106,7 @@ section {
 
 /* Text Sizes */
 .lead {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .sm {
@@ -136,7 +130,7 @@ section {
 }
 
 .icon {
-    font-size: 32px;
+    font-size: 28px;
     color: var(--primary-color);
 }
 
@@ -155,4 +149,8 @@ section {
 
 .btn:hover {
     background-color: var(--primary-color);
+}
+
+.mb-3 {
+    margin-bottom: 30px;
 }

@@ -1,9 +1,0 @@
-// {
-//   "redirects": [
-//     {
-//       "source": "/",
-//       "destination": "/pages/maintenance.html",
-//       "statusCode": 302
-//     }
-//   ]
-// }

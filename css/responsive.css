@@ -1,5 +1,12 @@
 /* For Mobile Devices */
 @media (max-width: 480px) {
+    .pc-menu, .btn-download {
+        display: none;
+    }
+
+    .menu-wrap {
+        display: block;
+    }
     section {
         padding: 0px;
         margin-top: 80px;
@@ -62,6 +69,14 @@
 
 /* For Tablet Devices */
 @media screen and (max-width: 992px) {
+    .pc-menu, .btn-download {
+        display: none;
+    }
+
+    .menu-wrap {
+        display: block;
+    }
+
     .container {
         padding: 0px 10px;
     }

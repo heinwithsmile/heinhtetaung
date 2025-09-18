@@ -7,7 +7,6 @@
     <title>Hein Htet Aung</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -276,16 +275,17 @@
         <div class="container">
             <h1 id="my-project">MY PROJECTS</h1>
             <p>Here are some of the web development projects I’ve worked on, showcasing my skills in frontend, backend, and full-stack development using modern technologies like Laravel, JavaScript, and responsive design.</p>
-            <div class="row">
-                <div id="tabs">
-                    <button class="btn active" onclick="filterSelection('all')"> Show All</button>
-                    <button class="btn" onclick="filterSelection('web')"> Web Application</button>
-                    <button class="btn" onclick="filterSelection('mobile')"> Mobile Application</button>
-                </div>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Web')">Web Apps</button>
+                <button class="tablinks" onclick="openCity(event, 'Mobile')">Mobile Apps</button>
+            </div>
+
+            <div id="Web" class="tabcontent">
+                <h3>Web Applications</h3>
                 <div class="flex">
                     <div class="column web">
                         <div class="content">
-                            <img src="" alt="Web Application">
+                            <img src="" alt="Student Information Center" style="width:100%; border-radius: 8px;">
                             <h4>Student Information Center</h4>
                             <p>A web application designed to help university students manage personal information, academic records, and announcements in one centralized platform. Built with Laravel and Bootstrap.</p>
                             <a class="btn btn-view-demo" href="./uni-help.html">Detail</a>
@@ -293,7 +293,7 @@
                     </div>
                     <div class="column web">
                         <div class="content">
-                            <img src="" alt="Web Application">
+                            <img src="" alt="User Rating Management System" style="width:100%; border-radius: 8px;">
                             <h4>User Rating Management System</h4>
                             <p>A web-based system for managing and analyzing user ratings and feedback. Features include real-time data visualization, admin controls, and secure authentication. Built with Laravel and JavaScript for efficient performance and usability.</p>
                             <a class="btn btn-view-demo" href="./rating-management.html">Detail</a>
@@ -301,7 +301,7 @@
                     </div>
                     <div class="column web">
                         <div class="content">
-                            <img src="" alt="Web Application">
+                            <img src="" alt="Bangkok Madam" style="width:100%; border-radius: 8px;">
                             <h4>Bangkok Madam</h4>
                             <p>“Bangkok Madam” is a free Japanese-language magazine for women, especially housewives, living in Bangkok. It offers lifestyle information on local restaurants, spas, clinics, and courses. The magazine is supported by a website featuring exclusive content and a fully functional online store, allowing users to promote and sell products directly</p>
                             <a class="btn btn-view-demo" href="https://www.bangkokmadam.net/">Detail</a>
@@ -309,17 +309,23 @@
                     </div>
                     <div class="column web">
                         <div class="content">
-                            <img src="" alt="Web Application">
-                            <h4>Welkids Photo</h4>
-                            <p>A mobile application for parents to view and download their children's school photos securely. Features include user authentication, photo galleries, and notifications for new uploads.</p>
+                            <img src="" alt="Welnejp" style="width:100%; border-radius: 8px;">
+                            <h4>Welnejp</h4>
+                            <p>Since 1998, the information website "Wel" has shared nursing care, welfare, and health care information and provided a message board for staff communication beyond company boundaries. In March 2015, management of Wel’s content—except job listings—was transferred to the NPO Wel as part of social contribution activities.</p>
                             <a class="btn btn-view-demo" href="#">Detail</a>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div id="Mobile" class="tabcontent">
+                <h3>Mobile Applications</h3>
+                <div class="flex">
                     <div class="column web">
                         <div class="content">
-                            <img src="" alt="Web Application">
-                            <h4>Welnejp</h4>
-                            <p>Since 1998, the information website "Wel" has shared nursing care, welfare, and health care information and provided a message board for staff communication beyond company boundaries. In March 2015, management of Wel’s content—except job listings—was transferred to the NPO Wel as part of social contribution activities.</p>
+                            <img src="" alt="Welkids Photo" style="width:100%; border-radius: 8px;">
+                            <h4>Welkids Photo</h4>
+                            <p>A mobile application for parents to view and download their children's school photos securely. Features include user authentication, photo galleries, and notifications for new uploads.</p>
                             <a class="btn btn-view-demo" href="#">Detail</a>
                         </div>
                     </div>
@@ -431,6 +437,23 @@
             autoStart: true,
             loop: true,
         });
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementsByClassName("tablinks")[0].click();
     </script>
 </body>
 

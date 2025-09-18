@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/maintenance.html",
+      "destination": "/pages/maintenance.html",
       "statusCode": 302
     }
   ]

@@ -18,6 +18,23 @@
         margin-bottom: 10px;
     }
 
+    /* Hero tweaks */
+    .hero {
+        gap: 24px;
+        min-height: auto;
+    }
+    .hero-left {
+        text-align: left;
+        padding: 10px 0 0;
+    }
+    .cta-group {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .hero-visual {
+        min-height: 300px;
+    }
+
     .left #name {
         font-size: 2rem;
     }
@@ -92,6 +109,17 @@
     .right-content {
         width: 990px;
         height: 800px;
+    }
+
+    /* Hero tweaks */
+    .hero {
+        gap: 28px;
+    }
+    .hero-left {
+        text-align: center;
+    }
+    .cta-group {
+        justify-content: center;
     }
 
     .let-talk {

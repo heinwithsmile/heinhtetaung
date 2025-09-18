@@ -21,7 +21,7 @@
                     <a href="#" class="">HEIN</a>
                 </div>
                 <ul class="pc-menu">
-                    <li><a href="#banner" class="active">&lt; Home &gt;</a></li>
+                    <li><a href="index.html">&lt; Home &gt;</a></li>
                     <li><a href="#about">&lt; About &gt;</a></li>
                     <li><a href="#project">&lt; Projects &gt;</a></li>
                     <li><a href="#contact">&lt; Contact &gt;</a></li>
@@ -53,28 +53,32 @@
     <!-- Header Section End -->
     <!-- Banner Section Start -->
     <section id="banner" class="banner">
-        <div class="container flex">
-            <div class="left">
-                <p class="greeting">I'm</p>
-                <h1 id="name">Hein Htet Aung</h1>
-                <!-- <h2 id="career"></h2> -->
+        <div class="container flex hero">
+            <div class="left hero-left">
+                <span class="hero-badge">Open to opportunities</span>
+                <h1 class="hero-title">
+                    Hi, I’m <span class="highlight">Hein Htet Aung</span>
+                </h1>
                 <!-- Element to contain animated typing -->
-                <span id="career"></span>
-                <br>
-                <br>
-                <p style="margin-bottom: 20px;">A passionate programmer with over 3+ years of experience in Web Design and Development, adept at creating innovative and user-friendly web solutions. Excited to contribute my skills and expertise to a dynamic team as a Web Developer.</p>
-                <a href="assets/HeinHtetAung-Resume-2025.pdf" class="btn-download">Download Resume</a>
+                <h2 class="hero-typed"><span id="career"></span></h2>
+                <p class="hero-subtitle">A passionate programmer with over 5+ years of experience in Web Design and Development, adept at creating innovative and user-friendly web solutions. Excited to contribute my skills and expertise to a dynamic team as a Web Developer.</p>
+                <div class="cta-group">
+                    <a href="#project" class="btn btn-primary">View Projects</a>
+                    <a href="assets/HeinHtetAung-Resume-2025.pdf" class="btn btn-secondary">Download Resume</a>
+                </div>
                 <div class="social">
                     <div class="social-wrap">
                         Get in Touch!
                         <span class="line"></span>
-                        <span class=""><a href="https://github.com/heinwithsmile"><i class="fa-brands fa-square-github icon"></i></a></span>
-                        
+                        <span><a href="https://github.com/heinwithsmile" aria-label="GitHub"><i class="fa-brands fa-square-github icon"></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/hein-htet-aung-baa2aa190/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin icon"></i></a></span>
                     </div>
                 </div>
             </div>
-            <div class="right">
-                <div class="right-content">
+            <div class="right hero-visual">
+                <div class="blob" aria-hidden="true"></div>
+                <div class="photo-card" aria-label="Profile visual">
+                    <div class="avatar">HH</div>
                 </div>
             </div>
         </div>
@@ -210,6 +214,22 @@
                             <p>Led development of secure and scalable banking web applications using Laravel. Oversaw backend architecture, integrated third-party APIs, and ensured code quality through version control and peer reviews. Collaborated with cross-functional teams to deliver high-performance features on time.</p>
                         </div>
                     </div>
+                    <!-- Web Developer (Laravel) -->
+                    <div class="work-experience-section ">
+                        <div class="sub-icon">
+                            <span class="edu-work-icon icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </span>
+                        </div>
+                        <div class="description ">
+                            <div class="duration">
+                                2025 May - 2025 Sep
+                            </div>
+                            <h4>Senior Web Developer (Laravel)</h4>
+                            <p>Yolo Digital Marketing Co.,Ltd</p>
+                            <p>Led development of secure and scalable web applications using Laravel. Oversaw backend architecture, integrated third-party APIs, and ensured code quality through version control and peer reviews. Collaborated with cross-functional teams to deliver high-performance features on time.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Programming Skills Section Start -->
@@ -276,43 +296,56 @@
             <h1 id="my-project">MY PROJECTS</h1>
             <p>Here are some of the web development projects I’ve worked on, showcasing my skills in frontend, backend, and full-stack development using modern technologies like Laravel, JavaScript, and responsive design.</p>
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Web')">Web Apps</button>
-                <button class="tablinks" onclick="openCity(event, 'Mobile')">Mobile Apps</button>
+                <button class="tablinks" onclick="openProject(event, 'Web')">Web Apps</button>
+                <button class="tablinks" onclick="openProject(event, 'Mobile')">Mobile Apps</button>
             </div>
 
             <div id="Web" class="tabcontent">
                 <h3>Web Applications</h3>
                 <div class="flex">
+                    <!-- Department Rating -->
                     <div class="column web">
                         <div class="content">
-                            <img src="" alt="Student Information Center" style="width:100%; border-radius: 8px;">
-                            <h4>Student Information Center</h4>
-                            <p>A web application designed to help university students manage personal information, academic records, and announcements in one centralized platform. Built with Laravel and Bootstrap.</p>
-                            <a class="btn btn-view-demo" href="./uni-help.html">Detail</a>
+                            <img src="./images/projects/DepartmentRating.png" alt="Department Rating thumbnail" style="width:100%; border-radius: 8px;">
+                            <h4>Department Rating</h4>
+                            <p>A web-based system for managing and analyzing department ratings and feedback. Features include real-time data visualization, admin controls, and secure authentication. Built with Laravel and JavaScript for efficient performance and usability.</p>
+                            <a class="btn btn-view-demo" href="/pages/department-rating.html">Case Study</a>
                         </div>
                     </div>
+                    <!-- Bangkok Madam -->
                     <div class="column web">
                         <div class="content">
-                            <img src="" alt="User Rating Management System" style="width:100%; border-radius: 8px;">
-                            <h4>User Rating Management System</h4>
-                            <p>A web-based system for managing and analyzing user ratings and feedback. Features include real-time data visualization, admin controls, and secure authentication. Built with Laravel and JavaScript for efficient performance and usability.</p>
-                            <a class="btn btn-view-demo" href="./rating-management.html">Detail</a>
-                        </div>
-                    </div>
-                    <div class="column web">
-                        <div class="content">
-                            <img src="" alt="Bangkok Madam" style="width:100%; border-radius: 8px;">
+                            <img src="./images/projects/BangkokMadam.png" alt="Bangkok Madam thumbnail" style="width:100%; border-radius: 8px;">
                             <h4>Bangkok Madam</h4>
                             <p>“Bangkok Madam” is a free Japanese-language magazine for women, especially housewives, living in Bangkok. It offers lifestyle information on local restaurants, spas, clinics, and courses. The magazine is supported by a website featuring exclusive content and a fully functional online store, allowing users to promote and sell products directly</p>
-                            <a class="btn btn-view-demo" href="https://www.bangkokmadam.net/">Detail</a>
+                            <a class="btn btn-view-demo" href="/pages/bangkok-madam.html">Case Study</a>
                         </div>
                     </div>
+                    <!-- Mona -->
                     <div class="column web">
                         <div class="content">
-                            <img src="" alt="Welnejp" style="width:100%; border-radius: 8px;">
-                            <h4>Welnejp</h4>
-                            <p>Since 1998, the information website "Wel" has shared nursing care, welfare, and health care information and provided a message board for staff communication beyond company boundaries. In March 2015, management of Wel’s content—except job listings—was transferred to the NPO Wel as part of social contribution activities.</p>
-                            <a class="btn btn-view-demo" href="#">Detail</a>
+                            <img src="./images/projects/MonaBeautyProducts.png" alt="Mona Beauty Products thumbnail" style="width:100%; border-radius: 8px;">
+                            <h4>Mona Beauty Products</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A totam autem rerum natus vero labore, laudantium repudiandae cumque quod ad at ab. Quae ut laboriosam blanditiis est, necessitatibus ipsa hic.</p>
+                            <a class="btn btn-view-demo" href="/pages/mona-beauty-products.html">Case Study</a>
+                        </div>
+                    </div>
+                    <!-- Shwe Yoke Lay Cargo -->
+                    <div class="column web">
+                        <div class="content">
+                            <img src="./images/projects/ShweYokeLayCargo.png" alt="Shwe Yoke Lay Cargo thumbnail" style="width:100%; border-radius: 8px;">
+                            <h4>Shwe Yoke Lay Cargo</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A totam autem rerum natus vero labore, laudantium repudiandae cumque quod ad at ab. Quae ut laboriosam blanditiis est, necessitatibus ipsa hic.</p>
+                            <a class="btn btn-view-demo" href="#">Case Study</a>
+                        </div>
+                    </div>
+                    <!-- Shwe Yoke Lay Ticketing -->
+                    <div class="column web">
+                        <div class="content">
+                            <img src="./images/projects/ShweYokeLayTicketing.png" alt="Shwe Yoke Lay Ticketing thumbnail" style="width:100%; border-radius: 8px;">
+                            <h4>Shwe Yoke Lay Ticketing</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A totam autem rerum natus vero labore, laudantium repudiandae cumque quod ad at ab. Quae ut laboriosam blanditiis est, necessitatibus ipsa hic.</p>
+                            <a class="btn btn-view-demo" href="#">Case Study</a>
                         </div>
                     </div>
                 </div>
@@ -326,7 +359,7 @@
                             <img src="" alt="Welkids Photo" style="width:100%; border-radius: 8px;">
                             <h4>Welkids Photo</h4>
                             <p>A mobile application for parents to view and download their children's school photos securely. Features include user authentication, photo galleries, and notifications for new uploads.</p>
-                            <a class="btn btn-view-demo" href="#">Detail</a>
+                            <a class="btn btn-view-demo" href="#">Case Study</a>
                         </div>
                     </div>
                 </div>
@@ -380,6 +413,8 @@
                             <div class="social-links">
                                 <span class="icon"><a href="https://github.com/heinwithsmile"><i class="fa-brands fa-square-github"></i></a></span>
                                 <span class="icon"><a href="https://www.linkedin.com/in/hein-htet-aung-baa2aa190/"><i class="fa-brands fa-linkedin"></i></a></span>
+                                <span class="icon"><a href="https://www.facebook.com/heinhtetaung7715/"><i class="fa-brands fa-facebook"></i></a></span>
+                                <span class="icon"><a href="https://www.youtube.com/@heinhtetaung3466"><i class="fa-brands fa-youtube"></i></a></span>
                             </div>
                         </td>
                     </tr>
@@ -416,10 +451,6 @@
     <!-- Footer Section Start -->
     <footer>
         <div class="container">
-            <div class="footer-social-links">
-                <span><a href="https://github.com/heinwithsmile"><i class="fa-brands fa-square-github icon-white"></i></a></span>
-                <span><a href="https://www.linkedin.com/in/hein-htet-aung-baa2aa190/"><i class="fa-brands fa-linkedin icon-white"></i></a></span>
-            </div>
             <div class="copy-right white">
                 <p>Copyright &copy; 2025 - All Rights Reserved.</p>
             </div>
@@ -438,7 +469,7 @@
             loop: true,
         });
 
-        function openCity(evt, cityName) {
+        function openProject(evt, projectName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
@@ -448,7 +479,7 @@
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
-            document.getElementById(cityName).style.display = "block";
+            document.getElementById(projectName).style.display = "block";
             evt.currentTarget.className += " active";
         }
 

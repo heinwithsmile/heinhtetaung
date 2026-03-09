@@ -84,6 +84,15 @@ section {
     color: var(--primary-color);
 }
 
+.sub-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
 /* FLEX BOX*/
 .flex {
     display: flex;

@@ -4,17 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hein Htet Aung</title>
-
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/menu.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   </head>
 
@@ -24,9 +21,8 @@
       <div class="container">
         <nav>
           <div class="logo">
-            <a href="../index.html">HEIN</a>
+            <a href="../index.html" class="">HEIN</a>
           </div>
-
           <ul class="pc-menu">
             <li>
               <a href="../index.html#banner" class="active">&lt; Home &gt;</a>
@@ -35,25 +31,20 @@
             <li><a href="../index.html#project">&lt; Projects &gt;</a></li>
             <li><a href="../index.html#contact">&lt; Contact &gt;</a></li>
           </ul>
-
           <div>
             <a
               href="../assets/HeinHtetAung-Resume-2025.pdf"
               class="btn-download"
+              >Download Resume</a
             >
-              Download Resume
-            </a>
           </div>
         </nav>
-
         <!-- Mobile Menu -->
         <div class="menu-wrap">
           <input type="checkbox" class="toggler" />
-
           <div class="hamburger">
             <div></div>
           </div>
-
           <div class="menu">
             <div>
               <div>
@@ -73,98 +64,98 @@
     <!-- Project Detail Start -->
     <section class="project-detail mb-3">
       <div class="container">
-        <h1>Bangkok Madam – Lifestyle Magazine & E-commerce Platform</h1>
-
+        <h1>Cargo Management System – Express Gate Dashboard</h1>
         <img
-          src="../images/projects/BangkokMadam.png"
-          alt="Bangkok Madam project preview"
+          src="../images/projects/ShweYokeLayCargo.png"
+          alt="Cargo Management System preview"
           class="project-image"
         />
 
         <div class="project-info">
-          <h4 class="sub-title">Project URL</h4>
-          <a href="https://www.bangkokmadam.net/" target="_blank"
-            >https://www.bangkokmadam.net/</a
-          >
-
           <h4 class="sub-title">Project Overview</h4>
-
           <p>
-            Bangkok Madam is a Japanese-language media platform designed for
-            women, especially housewives living in Bangkok. The website supports
-            the free lifestyle magazine by publishing updated content about
-            restaurants, spas, clinics, courses, and city lifestyle. The
-            platform also includes an integrated online shop to promote and sell
-            products directly to readers.
+            The Cargo Management System is a web-based dashboard designed to
+            manage cargo operations for express bus gates. The system allows
+            staff to record cargo details, manage sender and receiver
+            information, assign cargo to routes, and track delivery status
+            between cities. It helps replace manual paperwork with a digital
+            platform, improving efficiency, accuracy, and cargo tracking.
           </p>
 
           <h4 class="sub-title">Objectives</h4>
-
           <ul>
-            <li>Provide a fast and mobile-friendly content platform.</li>
             <li>
-              Enable easy publishing workflow with categories, tags, and
-              scheduling.
+              Digitize cargo receiving and delivery processes at express gates.
             </li>
-            <li>
-              Integrate a simple e-commerce system into the magazine website.
-            </li>
-            <li>Support Japanese language UI and SEO best practices.</li>
+            <li>Track cargo status from receiving to delivery.</li>
+            <li>Manage routes, gates, and cargo assignments efficiently.</li>
+            <li>Provide a centralized dashboard for daily cargo operations.</li>
           </ul>
 
           <h4 class="sub-title">Tech Stack</h4>
-
           <ul>
-            <li>Frontend: HTML5, CSS3, JavaScript (Pure CSS Layout)</li>
-            <li>Backend: CodeIgniter 4 (PHP)</li>
+            <li>Frontend: HTML5, CSS3, Bootstrap, JavaScript</li>
+            <li>Backend: Laravel 12 with Livewire</li>
             <li>Database: MySQL</li>
-            <li>Architecture: MVC Pattern</li>
+            <li>Other: Yajra DataTables, Repository Pattern Architecture</li>
           </ul>
 
           <h4 class="sub-title">Key Features</h4>
-
           <ul>
             <li>
-              Content Management: Article CRUD, categories, tags, featured
-              posts, and scheduling.
-            </li>
-            <li>Multi-language Support: Japanese-first user interface.</li>
-            <li>Search Functionality: Keyword search and category filters.</li>
-            <li>
-              E-commerce: Product catalog, cart, checkout, and order management.
+              Cargo Registration: Record sender, receiver, cargo type, and
+              destination.
             </li>
             <li>
-              Vendor Promotion: Featured product and brand spotlight sections.
+              Dynamic Gate Selection: Automatically load available gates based
+              on selected city.
             </li>
             <li>
-              Responsive Design: Optimized for mobile, tablet, and desktop.
+              Cargo Assignment: Assign cargo to available vehicles or routes.
             </li>
             <li>
-              SEO Optimization: Clean URLs, meta tags, and optimized images.
+              Status Tracking: Monitor cargo status such as Received, In
+              Transit, and Delivered.
+            </li>
+            <li>
+              Data Dashboard: View daily cargo records and operational
+              activities.
+            </li>
+            <li>
+              Responsive Interface: Optimized for staff usage on desktop and
+              tablets.
             </li>
           </ul>
 
           <h4 class="sub-title">My Contributions</h4>
-
           <ul>
             <li>
-              Designed the overall website architecture and content structure.
+              Designed and developed the cargo management dashboard using
+              Laravel and Livewire.
             </li>
-            <li>Developed frontend layouts using pure CSS and JavaScript.</li>
             <li>
-              Built article and product management modules using CodeIgniter 4.
+              Implemented dynamic cargo forms with city and gate dependency.
             </li>
-            <li>Implemented responsive UI for multiple devices.</li>
-            <li>Optimized pages for SEO and performance.</li>
+            <li>
+              Integrated Livewire components within Yajra DataTables for cargo
+              assignment.
+            </li>
+            <li>
+              Applied repository pattern architecture for clean and maintainable
+              backend code.
+            </li>
+            <li>
+              Built responsive UI using Bootstrap for smooth user experience.
+            </li>
           </ul>
 
           <div
             class="cta-group"
             style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap"
           >
-            <a class="btn btn-secondary" href="../index.html#project">
-              ← Back to Projects
-            </a>
+            <a class="btn btn-secondary" href="../index.html#project"
+              >← Back to Projects</a
+            >
           </div>
         </div>
       </div>
@@ -178,10 +169,9 @@
           <p>Copyright &copy; 2025 - All Rights Reserved.</p>
         </div>
       </div>
-
-      <a href="#" class="btn-top">
-        <i class="fa-sharp fa-solid fa-caret-up"></i>
-      </a>
+      <a href="#" class="btn-top"
+        ><i class="fa-sharp fa-solid fa-caret-up"></i
+      ></a>
     </footer>
     <!-- Footer Section End -->
   </body>

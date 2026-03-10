@@ -12,6 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   </head>
 
   <body>
@@ -29,7 +30,11 @@
             <li><a href="#contact">&lt; Contact &gt;</a></li>
           </ul>
           <div>
-            <a href="assets/HeinHtetAung-Resume-2025.pdf" class="btn-download" target="_blank">Download Resume</a
+            <a
+              href="assets/HeinHtetAung-Resume-2025.pdf"
+              class="btn-download"
+              target="_blank"
+              >Download Resume</a
             >
           </div>
         </nav>
@@ -83,12 +88,16 @@
               Get in Touch!
               <span class="line"></span>
               <span
-                ><a href="https://github.com/heinwithsmile" target="_blank" aria-label="GitHub"
+                ><a
+                  href="https://github.com/heinwithsmile"
+                  target="_blank"
+                  aria-label="GitHub"
                   ><i class="fa-brands fa-square-github icon"></i></a
               ></span>
               <span
                 ><a
-                  href="https://www.linkedin.com/in/hein-htet-aung-baa2aa190/" target="_blank"
+                  href="https://www.linkedin.com/in/hein-htet-aung-baa2aa190/"
+                  target="_blank"
                   aria-label="LinkedIn"
                   ><i class="fa-brands fa-linkedin icon"></i></a
               ></span>
@@ -420,7 +429,12 @@
                 />
                 <h4>Mona Beauty Products</h4>
                 <p>
-                  Mona Beauty Products is a modern, mobile-first e‑commerce website for a cosmetics and skincare brand. The platform showcases product lines with rich content (ingredients, benefits, usage), supports cart and checkout flows, and provides an admin dashboard to manage products, inventory, and orders.
+                  Mona Beauty Products is a modern, mobile-first e‑commerce
+                  website for a cosmetics and skincare brand. The platform
+                  showcases product lines with rich content (ingredients,
+                  benefits, usage), supports cart and checkout flows, and
+                  provides an admin dashboard to manage products, inventory, and
+                  orders.
                 </p>
                 <a
                   class="btn btn-view-demo"
@@ -439,9 +453,21 @@
                 />
                 <h4>Shwe Yoke Lay Cargo</h4>
                 <p>
-                  The Cargo Management Dashboard is a web-based system designed to manage cargo transportation operations for express bus gates. It allows staff to record cargo details, manage sender and receiver information, assign shipments to routes, and track delivery status. The system also helps monitor payments and daily cargo activities through a centralized dashboard. Built with Laravel, Livewire, and Bootstrap, it provides an efficient and user-friendly solution to streamline cargo management and improve operational accuracy
+                  The Cargo Management Dashboard is a web-based system designed
+                  to manage cargo transportation operations for express bus
+                  gates. It allows staff to record cargo details, manage sender
+                  and receiver information, assign shipments to routes, and
+                  track delivery status. The system also helps monitor payments
+                  and daily cargo activities through a centralized dashboard.
+                  Built with Laravel, Livewire, and Bootstrap, it provides an
+                  efficient and user-friendly solution to streamline cargo
+                  management and improve operational accuracy
                 </p>
-                <a class="btn btn-view-demo" href="./pages/shweyokelaycargo.html">Case Study</a>
+                <a
+                  class="btn btn-view-demo"
+                  href="./pages/shweyokelaycargo.html"
+                  >Case Study</a
+                >
               </div>
             </div>
           </div>
@@ -464,7 +490,12 @@
                   authentication, photo galleries, and notifications for new
                   uploads.
                 </p>
-                <a class="btn btn-view-demo" href="https://play.google.com/store/apps/details?id=jp.welkids.managerphoto&hl=en" target="_blank">Case Study</a>
+                <a
+                  class="btn btn-view-demo"
+                  href="https://play.google.com/store/apps/details?id=jp.welkids.managerphoto&hl=en"
+                  target="_blank"
+                  >Case Study</a
+                >
               </div>
             </div>
           </div>
@@ -510,7 +541,8 @@
               <td>
                 <div class="detail" style="padding: 10px">
                   <a href="#"
-                    >7/946(A), Tapin Shwe Htee Road, Dagon Myothit(East),  Yangon</a
+                    >7/946(A), Tapin Shwe Htee Road, Dagon Myothit(East),
+                    Yangon</a
                   >
                 </div>
               </td>
@@ -524,15 +556,20 @@
                   ></span>
                   <span class="icon"
                     ><a
-                      href="https://www.linkedin.com/in/hein-htet-aung-baa2aa190/" target="_blank"
+                      href="https://www.linkedin.com/in/hein-htet-aung-baa2aa190/"
+                      target="_blank"
                       ><i class="fa-brands fa-linkedin"></i></a
                   ></span>
                   <span class="icon"
-                    ><a href="https://www.facebook.com/heinhtetaung7715/" target="_blank"
+                    ><a
+                      href="https://www.facebook.com/heinhtetaung7715/"
+                      target="_blank"
                       ><i class="fa-brands fa-facebook"></i></a
                   ></span>
                   <span class="icon"
-                    ><a href="https://www.youtube.com/@heinhtetaung3466" target="_blank"
+                    ><a
+                      href="https://www.youtube.com/@heinhtetaung3466"
+                      target="_blank"
                       ><i class="fa-brands fa-youtube"></i></a
                   ></span>
                 </div>
@@ -551,9 +588,8 @@
             >
               Get In Touch
             </h2>
-            <form action="#" class="">
+            <form action="#" id="contactForm">
               <div class="name">
-                <!-- <label for="name" class="block">NAME</label> -->
                 <input
                   type="text"
                   name="name"
@@ -564,7 +600,6 @@
                 />
               </div>
               <div class="email">
-                <!-- <label for="email" class="block ">EMAIL</label> -->
                 <input
                   type="email"
                   name="email"
@@ -594,11 +629,12 @@
                   required
                 ></textarea>
               </div>
-              <a href="#" class="btn-send"
-                ><span style="margin-right: 5px"
+              <button class="btn-send" type="submit">
+                <span style="margin-right: 5px"
                   ><i class="fa-solid fa-paper-plane"></i></span
-                >Send</a
-              >
+                >Send
+              </button>
+              <p id="status"></p>
             </form>
           </div>
         </div>
@@ -644,9 +680,35 @@
         document.getElementById(projectName).style.display = "block";
         evt.currentTarget.className += " active";
       }
-
-      // Get the element with id="defaultOpen" and click on it
       document.getElementsByClassName("tablinks")[0].click();
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const subject = document.getElementById("subject").value;
+          const message = document.getElementById("message").value;
+
+          if (name === "" || email === "" || subject === "" || message === "") {
+            document.getElementById("status").innerText =
+              "Please fill all fields";
+            return;
+          }
+
+          document.getElementById("status").innerText =
+            "Message Sent Successfully!";
+
+          document.getElementById("contactForm").reset();
+        });
+      emailjs.send("service_osawfsy", "template_qbvn308", {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message,
+      });
     </script>
   </body>
 </html>

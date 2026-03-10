@@ -747,11 +747,13 @@ form label {
 
 .btn-send {
     text-decoration: none;
-    padding: 10px 50px;
+    padding: 10px 20px;
     width: 200px;
     height: 50px;
     background-color: var(--secondary-color);
     color: var(--light);
+    border: none;
+    cursor: pointer;
 }
 
 .btn-send:hover {
